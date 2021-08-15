@@ -1,0 +1,109 @@
+* {
+	position: relative;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-color: #eee;
+	--secondary-bg-color: #ddd;
+	color: #222;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: #222;
+		--secondary-bg-color: #333;
+		color: #eee;
+	}
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background: var(--bg-color);
+	margin: 0 auto;
+	padding: 0.5rem 1rem;
+	max-width: 60rem;
+}
+
+a {
+	color: inherit;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding: 0;
+}
+
+.nowrap { white-space: nowrap }
+
+.holes-table thead,
+.holes-table tbody td:not(:last-of-type) {
+	text-align: center;
+}
+
+@media (max-width: 33rem) {
+	.holes-table thead { display: none; }
+	.holes-table tbody tr {
+		display: grid;
+		grid-template-areas: "hole dist par" "notes notes notes";
+		padding: 0.4rem 0.2rem;
+	}
+
+	.holes-table tbody td:nth-of-type(1) {
+		grid-area: hole;
+	}
+	.holes-table tbody td:nth-of-type(2) {
+		grid-area: dist;
+	}
+	.holes-table tbody td:nth-of-type(3) {
+		grid-area: par;
+	}
+	.holes-table tbody td:nth-of-type(4) {
+		grid-area: notes;
+	}
+
+	.holes-table tbody td::before {
+		font-weight: bold;
+	}
+
+	.holes-table tbody td:nth-of-type(1)::before {
+		content: "Hole ";
+	}
+	.holes-table tbody td:nth-of-type(2)::after {
+		content: "m";
+	}
+	.holes-table tbody td:nth-of-type(3)::before {
+		content: "Par ";
+	}
+	.holes-table tbody td:nth-of-type(4)::before {
+		content: "Notes: ";
+	}
+}
+
+.holes-table td {
+	padding: 0.4rem 0.8rem;
+}
+
+.holes-table thead {
+	font-weight: bold;
+}
+
+.holes-table thead tr,
+.holes-table tbody tr:nth-of-type(2n) {
+	background-color: var(--secondary-bg-color);
+}
+
+.main-links {
+	display: flex;
+}
+
+.main-links li + li {
+	margin-inline-start: 1rem;
+}
+
+.main-links li {
+	background-color: var(--secondary-bg-color);
+	padding: 0.8rem;
+	border-radius: 2px;
+}
