@@ -35,6 +35,10 @@ ol[role='list'] {
   padding: 0;
 }
 
+img {
+	max-width: 100%;
+}
+
 .nowrap { white-space: nowrap }
 
 .holes-table thead,
