@@ -209,7 +209,11 @@
 						};
 					});
 				updateTable(weeklyStandings, header);
-				updateChart(weeklyStandings, header);
+				try {
+					updateChart(weeklyStandings, header);
+				} catch (err) {
+					console.error(err);
+				}
 			})
 			.catch(err => {
 				console.error(err);
