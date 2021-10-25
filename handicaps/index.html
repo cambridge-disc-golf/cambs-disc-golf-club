@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cambridge Disc Golf Club</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="Cambridge (UK) Disc Golf Club." />
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+	<h1>Handicaps</h1>
+	<div id="handicap-table-container"></div>
+	<noscript>
+		<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRigBwYoZV5k4O6oJR8d3GHKPXqVRpnsREvSm7pwB5jUKOJ6lYNJxf_XoMFQU3K-k1MQdUXvAvZWVya/pub">See Handicaps</a>
+	</noscript>
+	<script type="module">
+		const container = document.getElementById("handicap-table-container");
+		container.classList.toggle("loading");
+
+		const initialiseOtherNames = fullName => fullName.split(" ").map((name, idx) => idx === 0 ? name : name.split("-").map(s => s[0]).join("-")).join(" ");
+
+		function updateTable(data) {
+			const headerData = data[0];
+			const bodyData = data.slice(1);
+
+			const table = document.createElement("table");
+			table.id = "handicap-table";
+
+			const header = document.createElement("thead");
+			const headerRow = document.createElement("tr");
+			for (const str of headerData) {
+				const cell = document.createElement("th");
+				cell.textContent = str;
+				headerRow.appendChild(cell);
+			}
+			header.appendChild(headerRow);
+			table.appendChild(header);
+
+			const body = document.createElement("tbody");
+			for (const rowData of bodyData) {
+				const bodyRow = document.createElement("tr");
+				for (const name of rowData) {
+					const cell = document.createElement("td");
+					cell.textContent = initialiseOtherNames(name);
+					bodyRow.appendChild(cell);
+				}
+				body.appendChild(bodyRow);
+			}
+			table.appendChild(body);
+
+			container.appendChild(table);
+
+			container.classList.toggle("loading");
+		}
+
+		fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vRigBwYoZV5k4O6oJR8d3GHKPXqVRpnsREvSm7pwB5jUKOJ6lYNJxf_XoMFQU3K-k1MQdUXvAvZWVya/pub?gid=443736566&single=true&output=csv")
+			.then(res => res.text())
+			.then(res => {
+				const rows = res.split("\n");
+				const rowCells = rows.map(row => row.split(",").map(s => s.trim()));
+
+				updateTable(rowCells)
+			})
+			.catch(err => {
+				console.error(err);
+				container.classList.remove("loading");
+				container.classList.add("error");
+			});
+	</script>
+</body>
+</html>

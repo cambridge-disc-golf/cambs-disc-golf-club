@@ -85,16 +85,21 @@ img {
 	}
 }
 
-.holes-table td {
+#handicap-table td:not(:nth-of-type(2)) {
+	text-align: center;
+}
+
+table td,
+table th {
 	padding: 0.4rem 0.8rem;
 }
 
-.holes-table thead {
+table thead {
 	font-weight: bold;
 }
 
-.holes-table thead tr,
-.holes-table tbody tr:nth-of-type(2n) {
+table thead tr,
+table tbody tr:nth-of-type(2n) {
 	background-color: var(--secondary-bg-color);
 }
 
