@@ -26,4 +26,9 @@
 	<li><a href="https://udisc.com/courses/papworth-everard-l2bt">UDisc</a></li>
 	<li><a href="https://goo.gl/maps/mjkuvnVjncsBhtCe8">Google Maps</a></li>
 </ul>
-<img src="/course.png" alt="Map of the Papworth Disc Golf Course Layout">
+<picture alt="Map of the Papworth Disc Golf Course Layout">
+    <source src="/course.avif" type="image/avif"/>
+    <source src="/course.webp" type="image/webp"/>
+    <source src="/course.gif" type="image/gif"/>
+    <img src="/course.png" />
+</picture>

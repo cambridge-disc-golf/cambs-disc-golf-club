@@ -1,51 +1,12 @@
-<style>
-	table thead,
-	table tbody td:not(:last-of-type) {
-		text-align: center;
-	}
-
-	@media (max-width: 33rem) {
-		table thead { display: none; }
-		table tbody tr {
-			display: grid;
-			grid-template-areas: "hole dist par" "notes notes notes";
-			padding: 0.4rem 0.2rem;
-		}
-
-		table tbody td:nth-of-type(1) {
-			grid-area: hole;
-		}
-		table tbody td:nth-of-type(2) {
-			grid-area: dist;
-		}
-		table tbody td:nth-of-type(3) {
-			grid-area: par;
-		}
-		table tbody td:nth-of-type(4) {
-			grid-area: notes;
-		}
-
-		table tbody td::before {
-			font-weight: bold;
-		}
-
-		table tbody td:nth-of-type(1)::before {
-			content: "Hole ";
-		}
-		table tbody td:nth-of-type(2)::after {
-			content: "m";
-		}
-		table tbody td:nth-of-type(3)::before {
-			content: "Par ";
-		}
-		table tbody td:nth-of-type(4)::before {
-			content: "Notes: ";
-		}
-	}
-</style>
-
 <h1>Holes</h1>
-<img src="/course.png" alt="Map of the Papworth Disc Golf Course Layout">
+
+<picture alt="Map of the Papworth Disc Golf Course Layout">
+    <source src="/course.avif" type="image/avif"/>
+    <source src="/course.webp" type="image/webp"/>
+    <source src="/course.gif" type="image/gif"/>
+    <img src="/course.png" />
+</picture>
+
 <table>
 	<thead>
 		<tr>
@@ -166,3 +127,49 @@
 		</tr>
 	</tbody>
 </table>
+
+<style>
+	table thead,
+	table tbody td:not(:last-of-type) {
+		text-align: center;
+	}
+
+	@media (max-width: 33rem) {
+		table thead { display: none; }
+		table tbody tr {
+			display: grid;
+			grid-template-areas: "hole dist par" "notes notes notes";
+			padding: 0.4rem 0.2rem;
+		}
+
+		table tbody td:nth-of-type(1) {
+			grid-area: hole;
+		}
+		table tbody td:nth-of-type(2) {
+			grid-area: dist;
+		}
+		table tbody td:nth-of-type(3) {
+			grid-area: par;
+		}
+		table tbody td:nth-of-type(4) {
+			grid-area: notes;
+		}
+
+		table tbody td::before {
+			font-weight: bold;
+		}
+
+		table tbody td:nth-of-type(1)::before {
+			content: "Hole ";
+		}
+		table tbody td:nth-of-type(2)::after {
+			content: "m";
+		}
+		table tbody td:nth-of-type(3)::before {
+			content: "Par ";
+		}
+		table tbody td:nth-of-type(4)::before {
+			content: "Notes: ";
+		}
+	}
+</style>
