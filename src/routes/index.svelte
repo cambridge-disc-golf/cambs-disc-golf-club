@@ -1,3 +1,26 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
+<h1>Cambridge (UK) Disc Golf Club </h1>
+<p>No permanent baskets, but can organise rounds in the facebook group with basket owners. 18 hole course in Papworth Everard starts and ends next to the Village Hall.</p>
+<ul role="list" class="main-links">
+	<li><a href="/holes">Hole Descriptions</a></li>
+	<li><a href="/bag-tag">Bag Tag Standings</a></li>
+	<li><a href="/handicaps">Handicaps</a></li>
+</ul>
+<ul role="list" class="main-links">
+	<li><a href="https://www.facebook.com/groups/115658245890790">Facebook Group</a></li>
+	<li><a href="https://udisc.com/courses/papworth-everard-l2bt">UDisc</a></li>
+	<li><a href="https://goo.gl/maps/mjkuvnVjncsBhtCe8">Google Maps</a></li>
+</ul>
+<picture>
+    <source src="/course.avif" type="image/avif"/>
+    <source src="/course.webp" type="image/webp"/>
+    <source src="/course.gif" type="image/gif"/>
+    <img src="/course.png" alt="Map of the Papworth Disc Golf Course Layout" />
+</picture>
+
 <style>
 	.main-links {
 		display: flex;
@@ -13,22 +36,3 @@
 		border-radius: 2px;
 	}
 </style>
-
-<h1>Cambridge (UK) Disc Golf Club </h1>
-<p>No permanent baskets, but can organise rounds in the facebook group with basket owners. 18 hole course in Papworth Everard starts and ends next to the Village Hall.</p>
-<ul role="list" class="main-links">
-	<li><a href="/holes">Hole Descriptions</a></li>
-	<li><a href="/bag-tag">Bag Tag Standings</a></li>
-	<li><a href="/handicaps">Handicaps</a></li>
-</ul>
-<ul role="list" class="main-links">
-	<li><a href="https://www.facebook.com/groups/115658245890790">Facebook Group</a></li>
-	<li><a href="https://udisc.com/courses/papworth-everard-l2bt">UDisc</a></li>
-	<li><a href="https://goo.gl/maps/mjkuvnVjncsBhtCe8">Google Maps</a></li>
-</ul>
-<picture alt="Map of the Papworth Disc Golf Course Layout">
-    <source src="/course.avif" type="image/avif"/>
-    <source src="/course.webp" type="image/webp"/>
-    <source src="/course.gif" type="image/gif"/>
-    <img src="/course.png" />
-</picture>

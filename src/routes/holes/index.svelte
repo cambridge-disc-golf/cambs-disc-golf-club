@@ -1,10 +1,15 @@
+<script context="module">
+	export const prerender = true;
+	export const hydrate = false;
+</script>
+
 <h1>Holes</h1>
 
-<picture alt="Map of the Papworth Disc Golf Course Layout">
+<picture>
     <source src="/course.avif" type="image/avif"/>
     <source src="/course.webp" type="image/webp"/>
     <source src="/course.gif" type="image/gif"/>
-    <img src="/course.png" />
+    <img src="/course.png" alt="Map of the Papworth Disc Golf Course Layout" />
 </picture>
 
 <table>
