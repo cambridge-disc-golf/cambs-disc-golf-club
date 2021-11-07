@@ -110,26 +110,25 @@
 	let lineGroups = Array.from(groupMap, ([key, value]) => ({ key, value }));
 
 	let transformHoverGroup = null;
-	let hoveredGroupKey = null;
-	function pointermoved(event) {
+	let highlightedGroupKey = null;
+	function mousemoved(event) {
 		const [xm, ym] = pointer(event);
 		const i = least(I, i => Math.hypot(xScale(X[i]) - xm, yScale(Y[i]) - ym)); // closest point
-		hoveredGroupKey = Z[i];
+		highlightedGroupKey = Z[i];
 		transformHoverGroup = `translate(${xScale(X[i])},${yScale(Y[i]) - 5})`;
 	}
 
-	function pointerleft() {
-		hoveredGroupKey = null;
+	function mouseleft() {
+		highlightedGroupKey = null;
 	}
 </script>
 
-<figure class="c" bind:clientWidth="{width}">
+<figure class="m-0" bind:clientWidth="{width}">
 	<svg
 		{width} {height} viewBox="0 0 {width} {height}"
 		style="max-width: 100%; height: auto; height: intrinsic;"
-		on:pointermove={pointermoved}
-		on:pointerleave={pointerleft}
-		on:touchstart={(e) => e.preventDefault()}
+		on:mousemove={mousemoved}
+		on:mouseleave={mouseleft}
 	>
 		<g class="axis" bind:this={gXAxis} transform="{transformXAxis}" />
 		<g class="axis" bind:this={gYAxis} transform="{transformYAxis}">
@@ -143,9 +142,15 @@
 				stroke-linecap={strokeLinecap}
 				stroke-linejoin={strokeLinejoin}
 				stroke-width={strokeWidth}
-				stroke-opacity={hoveredGroupKey !== null && hoveredGroupKey !== key ? Math.max(Math.min(strokeOpacity, 0.1), strokeOpacity - 0.6) : strokeOpacity}
+				stroke-opacity={highlightedGroupKey !== null && highlightedGroupKey !== key ? Math.max(Math.min(strokeOpacity, 0.1), strokeOpacity - 0.6) : strokeOpacity}
 			/>
-			{#if showLastSeriesTitle}<text text-anchor="left" fill="currentColor" transform="translate({xScale(X[value[value.length - 1]]) + 5},{yScale(Y[value[value.length - 1]]) + 4}) scale(0.8)">{T[value[value.length - 1]]}</text>{/if}
+			{#if showLastSeriesTitle}
+				<text
+					text-anchor="left"
+					fill="currentColor"
+					transform="translate({xScale(X[value[value.length - 1]]) + 5},{yScale(Y[value[value.length - 1]]) + 4}) scale(0.8)"
+				>{T[value[value.length - 1]]}</text>
+			{/if}
 		{/each}
 	</svg>
 </figure>

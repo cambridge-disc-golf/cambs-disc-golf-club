@@ -56,3 +56,5 @@ table tbody tr:nth-of-type(2n) {
 .nowrap { white-space: nowrap; }
 
 .w-full { width: 100%; }
+
+.m-0 { margin: 0; }
