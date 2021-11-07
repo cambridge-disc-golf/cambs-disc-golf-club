@@ -53,4 +53,6 @@ table tbody tr:nth-of-type(2n) {
 	background-color: var(--secondary-bg-color);
 }
 
-.nowrap { white-space: nowrap }
+.nowrap { white-space: nowrap; }
+
+.w-full { width: 100%; }

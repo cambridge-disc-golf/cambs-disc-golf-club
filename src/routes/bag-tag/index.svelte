@@ -22,7 +22,7 @@
 	import MultiLineChart from "$lib/MultiLineChart.svelte";
 	import { schemeCategory10 } from "d3";
 	export let data;
-	let flatData = data.flatMap(d => d.standings.map((name, i) => ({ date: new Date(d.date), name, tag: i + 1 })))
+	let flatData = data.flatMap(d => d.standings.map((name, i) => ({ date: new Date(d.date), name, tag: i + 1 }))).filter(d => d.name !== "-");
 
 	const previousStandings = data[data.length - 2]?.standings || [];
 	const latestWeekStandings = data[data.length - 1].standings;
@@ -95,18 +95,22 @@
 	{/each}
 </ol>
 
-<MultiLineChart
-	data={flatData}
-	xAccessor={d => d.date}
-	yAccessor={d => d.tag}
-	yDomain={[31, 1]}
-	yLabel="Placing"
-	zAccessor={d => d.name}
-	{zColorAccessor}
-	title={d => d.name === "-" ? null : `${initialiseOtherNames(d.name)} (${d.tag})`}
-	defined={d => d.name !== "-"}
-	height={800}
-/>
+<div class="w-full">
+	<MultiLineChart
+		data={flatData}
+		xAccessor={d => d.date}
+		yAccessor={d => d.tag}
+		yDomain={[31, 1]}
+		yLabel="Placing"
+		zAccessor={d => d.name}
+		{zColorAccessor}
+		title={d => d.name === "-" ? null : `${initialiseOtherNames(d.name)} (${d.tag})`}
+		defined={d => d.name !== "-"}
+		height={800}
+		marginRight={110}
+		showLastSeriesTitle={true}
+	/>
+</div>
 
 <style>
 	:global(.axis .domain) {
