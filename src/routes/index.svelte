@@ -27,7 +27,7 @@
 		<source src="/course.avif" type="image/avif"/>
 		<source src="/course.webp" type="image/webp"/>
 		<source src="/course.gif" type="image/gif"/>
-		<img class="hero-img" src="/course.png" alt="Map of the Papworth Disc Golf Course Layout" />
+		<img src="/course.png" alt="Map of the Papworth Disc Golf Course Layout" />
 	</picture>
 </div>
 
