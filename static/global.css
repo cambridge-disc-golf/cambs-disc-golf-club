@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'Georama';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/Georama-Bold.ttf') format('truetype');
+}
+
 * {
 	position: relative;
 	box-sizing: border-box;
@@ -6,23 +13,45 @@
 :root {
 	--bg-color: #eee;
 	--secondary-bg-color: #ddd;
-	color: #222;
+
+	--dark-color: #222;
+	--light-color: #eee;
+
+	--color: var(--dark-color);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg-color: #222;
 		--secondary-bg-color: #333;
-		color: #eee;
+		--color: var(--light-color);
 	}
 }
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-family: Arial, sans-serif;
 	background: var(--bg-color);
+	color: var(--color);
+	margin: 0;
+}
+
+.container {
 	margin: 0 auto;
 	padding: 0.5rem 1rem;
 	max-width: 60rem;
+}
+
+.pin {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+	font-family: 'Georama', sans-serif;
+	font-weight: 700;
 }
 
 a {
