@@ -22,26 +22,28 @@
 	export let data;
 </script>
 
-<h1>Handicaps</h1>
+<div class="container">
+	<h1>Handicaps</h1>
 
-<table>
-	<thead>
-		<tr>
-			<th>Rank</th>
-			<th>Name</th>
-			<th>Handicap</th>
-		</tr>
-	</thead>
-	<tbody>
-		{#each data as { rank, name, handicap } }
+	<table>
+		<thead>
 			<tr>
-				<td>{rank}</td>
-				<td>{name}</td>
-				<td>{handicap}</td>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Handicap</th>
 			</tr>
-		{/each}
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			{#each data as { rank, name, handicap } }
+				<tr>
+					<td>{rank}</td>
+					<td>{name}</td>
+					<td>{handicap}</td>
+				</tr>
+			{/each}
+		</tbody>
+	</table>
+</div>
 
 <style>
 	table td:not(:nth-of-type(2)) {

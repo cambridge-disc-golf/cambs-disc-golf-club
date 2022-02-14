@@ -37,7 +37,6 @@ body {
 
 .container {
 	margin: 0 auto;
-	padding: 0.5rem 1rem;
 	max-width: 60rem;
 }
 
@@ -49,9 +48,13 @@ body {
 	bottom: 0;
 }
 
-:is(h1, h2, h3, h4, h5, h6) {
+:is(h1, h2, h3, h4, h5, h6, .heading) {
 	font-family: 'Georama', sans-serif;
 	font-weight: 700;
+}
+
+h1 {
+	font-size: 3rem;
 }
 
 a {
