@@ -86,8 +86,8 @@ a {
 	color: inherit;
 }
 
-ul[role='list'],
-ol[role='list'] {
+ul.reset,
+ol.reset {
   list-style: none;
   padding: 0;
 }

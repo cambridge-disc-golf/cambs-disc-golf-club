@@ -18,7 +18,7 @@
 
 <nav>
 	<div class="container">
-		<ul role="list">
+		<ul class="reset">
 			<li><a aria-current="page" href="/">Home</a></li>
 			<li><a href="/holes">Course</a></li>
 			<li><a href="/bag-tag">Bag Tags</a></li>
@@ -28,7 +28,7 @@
 </nav>
 
 <main class="container">
-	<ul role="list" class="heading-cards">
+	<ul class="reset heading-cards">
 		<li>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
