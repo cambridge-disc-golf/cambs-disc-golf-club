@@ -12,7 +12,7 @@
 		/>
 	</picture>
 	<div class="title-container pin">
-		<h1>Cambridge Disc Golf Club</h1>
+		<h1>Cambridge <br />Disc Golf Club</h1>
 	</div>
 </div>
 
@@ -175,9 +175,15 @@
 	}
 	.home-hero-container .title-container h1 {
 		display: flex;
-		font-size: clamp(1rem, 7vw, 5rem);
+		text-align: center;
+		font-size: clamp(3rem, 7vw, 5rem);
 		margin: 0;
 		color: var(--light-color);
+	}
+	@media (min-width: 570px) {
+		.home-hero-container .title-container h1 br {
+			display: none;
+		}
 	}
 	.hero-img {
 		height: clamp(40vh, 50vw, 60vh);
@@ -215,14 +221,17 @@
 	}
 
 	.heading-cards {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		gap: 1rem;
 	}
 
 	.heading-cards li {
+		flex: 1 1 18rem;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		gap: 2ch;
 		background-color: var(--secondary-bg-color);
 		padding: 1rem 1.5rem 1rem 1rem;
