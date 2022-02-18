@@ -40,6 +40,11 @@ body {
 	max-width: 62rem;
 }
 
+.prose {
+	margin: 0 auto;
+	max-width: 80ch;
+}
+
 .pin {
 	position: absolute;
 	top: 0;
