@@ -3,7 +3,8 @@
 </script>
 
 <script>
-	let year = new Date().getFullYear();
+	import Nav from '$lib/Nav.svelte';
+	import Footer from '$lib/Footer.svelte';
 </script>
 
 <div class="home-hero-container">
@@ -20,16 +21,7 @@
 	</div>
 </div>
 
-<nav>
-	<div class="container">
-		<ul class="reset">
-			<li><a aria-current="page" href="/">Home</a></li>
-			<li><a href="/holes">Course</a></li>
-			<li><a href="/bag-tag">Bag Tags</a></li>
-			<li><a href="/handicaps">Handicaps</a></li>
-		</ul>
-	</div>
-</nav>
+<Nav currentPage="home" />
 
 <main class="container">
 	<ul class="reset heading-cards">
@@ -103,7 +95,8 @@
 			</div>
 		</li>
 	</ul>
-	<div class="prose">
+	<section class="prose">
+		<h2>About us</h2>
 		<p>
 			Cambridge Disc Golf club welcomes all players of all abilities, no
 			experience necessary!
@@ -128,7 +121,7 @@
 			handicap, and we have club bag tags which are up for grabs whenever club
 			members play on a card together.
 		</p>
-	</div>
+	</section>
 	<img
 		class="jumper-round-img"
 		src="/christmas-round.jpg"
@@ -142,39 +135,7 @@
 	</picture> -->
 </main>
 
-<footer>
-	<div class="container">
-		<div class="footer-links-container">
-			<div>
-				<p class="heading" id="footer-pages-heading">Pages</p>
-				<ul aria-labelledby="footer-pages-heading">
-					<li><a href="/holes">Hole Descriptions</a></li>
-					<li><a href="/bag-tag">Bag Tag Standings</a></li>
-					<li><a href="/handicaps">Handicaps</a></li>
-				</ul>
-			</div>
-			<div>
-				<p class="heading" id="footer-links-heading">Links</p>
-				<ul aria-labelledby="footer-links-heading">
-					<li>
-						<a href="https://www.facebook.com/groups/115658245890790"
-							>Facebook Group</a
-						>
-					</li>
-					<li>
-						<a href="https://udisc.com/courses/papworth-everard-l2bt">UDisc</a>
-					</li>
-					<li>
-						<a href="https://goo.gl/maps/mjkuvnVjncsBhtCe8">Google Maps</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<span>&copy; {year} Cambridge Disc Golf Club</span>
-		</div>
-	</div>
-</footer>
+<Footer />
 
 <style>
 	.home-hero-container picture {
@@ -205,29 +166,6 @@
 		width: 100%;
 		object-fit: cover;
 		object-position: center;
-	}
-
-	nav {
-		position: sticky;
-		top: 0;
-		z-index: 1;
-		background-color: var(--secondary-bg-color);
-	}
-	nav ul {
-		margin: 0;
-		padding: 1rem;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	nav ul li {
-		margin-inline-end: 2ch;
-	}
-	nav a[aria-current='page'] {
-		font-weight: bold;
-	}
-
-	main {
-		padding: 1rem;
 	}
 	main > img,
 	main > picture img {
@@ -261,31 +199,5 @@
 
 	.heading-cards li p {
 		margin-block: 0.5ex;
-	}
-
-	footer {
-		background-color: var(--secondary-bg-color);
-	}
-	footer .heading {
-		font-size: 1.1em;
-	}
-	footer .container {
-		padding: 1rem;
-	}
-	.footer-links-container {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.footer-links-container > * {
-		margin-inline-end: 2rem;
-	}
-	.footer-links-container ul {
-		padding-inline-start: 1.5ch;
-	}
-	.footer-links-container ul li {
-		margin-block: 1ex;
-	}
-	.footer-copyright {
-		text-align: center;
 	}
 </style>

@@ -35,6 +35,10 @@ body {
 	margin: 0;
 }
 
+main {
+	padding: 1rem;
+}
+
 .container {
 	margin: 0 auto;
 	max-width: 62rem;
