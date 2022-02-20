@@ -92,9 +92,8 @@
 				<p>No experience necessary</p>
 			</div>
 			<p class="subtle links">
-				<a href="/about">Information for new members</a><span class="separator"
-					>•</span
-				><a href="https://www.facebook.com/groups/115658245890790"
+				<a href="/about">New members</a><span class="separator">•</span><a
+					href="https://www.facebook.com/groups/115658245890790"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="14"
@@ -140,8 +139,11 @@
 	<section class="prose">
 		<h2>About us</h2>
 		<p>
-			Cambridge Disc Golf club welcomes all players of all abilities, no
-			experience necessary!
+			Cambridge Disc Golf Club was founded in 2021 with the objectives of
+			promoting health, wellness, happiness and community development through
+			the learning and enjoyment of disc golf to the Cambridgeshire area. This
+			shall be done by means of training sessions, tournaments, leagues, social
+			events and more.
 		</p>
 		<p>
 			There are no permanent courses in/around Cambridge, however we have two
@@ -159,9 +161,9 @@
 			round.
 		</p>
 		<p>
-			Occasionally we'll hold tournaments where scores are adjusted by their
-			handicap, and we have club bag tags which are up for grabs whenever club
-			members play on a card together.
+			To find out more about the club, sport, and course, head to our <a
+				href="/about">about page</a
+			>.
 		</p>
 	</section>
 	<img
@@ -169,6 +171,39 @@
 		src="/christmas-round.jpg"
 		alt="Club members looking happy after a christmas jumper round"
 	/>
+	<section class="prose">
+		<h2>Events Calendar</h2>
+		<ul class="reset event-list">
+			<li>
+				<p class="heading">Club Round</p>
+				<em>Every Sunday at 11:00</em>
+				<p>
+					Join the <a href="https://www.facebook.com/groups/115658245890790"
+						>Facebook Group</a
+					> and let us know you're coming in the weekly club round roll-call. If
+					you are new to the sport and/or need to borrow any discs, let us know and
+					we'll be happy to help.
+				</p>
+			</li>
+			<li>
+				<p class="heading">Notts DG visits Papworth</p>
+				<em>Sunday, 29th May 2022 at 11:00</em>
+				<p>
+					The Cambridge Disc Golf club has grown a lot in size in the last year.
+					We want to celebrate that by bringing more people to try out our local
+					course Papworth. If you're a member of Cambridge Disc Golf Club, join
+					the event here: <a
+						href="https://www.facebook.com/events/889072438434550">link</a
+					>.
+				</p>
+			</li>
+		</ul>
+	</section>
+	<!-- <section class="prose">
+		<h2>Getting Here</h2>
+		<p><b>By Car:</b></p>
+		<p><b>By Bus:</b></p>
+	</section> -->
 	<!-- <picture>
 		<source src="/course.avif" type="image/avif" />
 		<source src="/course.webp" type="image/webp" />
@@ -257,8 +292,17 @@
 	.links .separator {
 		margin-inline: 1ch;
 	}
-
 	.heading-cards li p {
 		margin-block: 0.5ex;
+	}
+	.event-list li {
+		background-color: var(--secondary-bg-color);
+		max-width: 50ch;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		margin-block-end: 1rem;
+	}
+	.event-list li p {
+		margin-block-end: 0;
 	}
 </style>
