@@ -71,4 +71,9 @@
 		height: 2rem;
 		margin-inline: 1rem;
 	}
+	@media (prefers-color-scheme: dark) {
+		.logo {
+			filter: invert(1);
+		}
+	}
 </style>

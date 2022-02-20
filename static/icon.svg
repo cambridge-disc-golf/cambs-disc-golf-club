@@ -1,0 +1,15 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd"
+    stroke-linejoin="round" stroke-miterlimit="2">
+    <style>
+        @media (prefers-color-scheme: dark) {
+            .a {
+                fill: #f0f0f0
+            }
+        }
+    </style>
+    <path fill="#0f0f0f" class="a"
+        d="M4 0h23.999v4H4zM26 16H6v6h20v-6Zm-2 2H8v2h16v-2ZM4 4h2v6H4zM6 10h2v4H6zM8 14h2v2H8zM8 4h2v6H8z" />
+    <path fill="#0f0f0f" class="a"
+        d="M14 4h4v27.999h-4zM10 10h2v4h-2zM12 14h2v2h-2zM22 14h2v2h-2zM24 10h2v4h-2zM26 4h2v6h-2z" />
+    <path fill="#0f0f0f" class="a" d="M17.956 14h2v2h-2zM19.956 10h2v4h-2zM21.956 4h2v6h-2z" />
+</svg>
