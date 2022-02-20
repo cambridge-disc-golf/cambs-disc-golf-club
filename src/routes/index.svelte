@@ -51,6 +51,13 @@
 				<p class="heading">Papworth Everard</p>
 				<p>25 mins from Cambridge</p>
 			</div>
+			<p class="subtle links">
+				<a href="https://w3w.co/incoming.exploring.winners"
+					>///incoming.exploring.winners</a
+				><span class="separator">•</span><a
+					href="https://goo.gl/maps/mjkuvnVjncsBhtCe8">Google Maps</a
+				>
+			</p>
 		</li>
 		<li>
 			<svg
@@ -72,6 +79,9 @@
 				<p class="heading">All welcome</p>
 				<p>No experience necessary</p>
 			</div>
+			<p class="subtle links">
+				<a href="/about">Information for new members</a>
+			</p>
 		</li>
 		<li>
 			<svg
@@ -93,6 +103,11 @@
 				<p class="heading">Short & Long Course</p>
 				<p>Wooded & open holes.</p>
 			</div>
+			<p class="subtle links">
+				<a href="/courses">Course descriptions</a><span class="separator"
+					>•</span
+				><a href="https://udisc.com/courses/papworth-everard-l2bt">UDisc</a>
+			</p>
 		</li>
 	</ul>
 	<section class="prose">
@@ -188,13 +203,22 @@
 
 	.heading-cards li {
 		flex: 1 1 18rem;
-		display: flex;
+		display: inline-grid;
+		grid-template-columns: auto auto;
 		align-items: center;
 		justify-content: center;
-		gap: 2ch;
+		gap: 1ch 2ch;
 		background-color: var(--secondary-bg-color);
 		padding: 1rem 1.5rem 1rem 1rem;
 		border-radius: 0.5rem;
+	}
+
+	.heading-cards li .links {
+		grid-column: span 2;
+		text-align: center;
+	}
+	.links .separator {
+		margin-inline: 1ch;
 	}
 
 	.heading-cards li p {
