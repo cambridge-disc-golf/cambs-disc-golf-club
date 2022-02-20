@@ -76,4 +76,9 @@
 			filter: invert(1);
 		}
 	}
+	@media (max-width: 570px) {
+		.footer-copyright {
+			flex-direction: column;
+		}
+	}
 </style>
