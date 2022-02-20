@@ -13,6 +13,8 @@
 <main class="container">
 	<h1>Courses</h1>
 
+	<h2>Short Course</h2>
+
 	<picture>
 		<source src="/course.avif" type="image/avif" />
 		<source src="/course.webp" type="image/webp" />
