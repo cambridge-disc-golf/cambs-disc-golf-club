@@ -128,8 +128,8 @@
 			which just requires someone with a basket.
 		</p>
 		<p>
-			We organise club rounds most Sunday's starting at 11am, and will organise
-			them in our
+			We hold club rounds most Sunday's starting at 11am, and will organise them
+			in our
 			<a href="https://www.facebook.com/groups/115658245890790"
 				>Facebook Group</a
 			>. These are the perfect opportunities for beginners, or players new to
