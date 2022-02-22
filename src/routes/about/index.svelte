@@ -32,6 +32,15 @@
 			bit more of a challenge, with three longer open holes replacing some of
 			the shorter, wooded ones.
 		</p>
+		<picture>
+			<source src="/course.avif" type="image/avif" />
+			<source src="/course.webp" type="image/webp" />
+			<source src="/course.gif" type="image/gif" />
+			<img
+				src="/course.png"
+				alt="Map of the Papworth Disc Golf Course Layout"
+			/>
+		</picture>
 	</section>
 	<section class="prose">
 		<h2>The Sport</h2>
@@ -58,15 +67,63 @@
 			some discs to try and and see which you like best!
 		</p>
 	</section>
-	<section class="prose">
-		<h2>The Committee</h2>
-		<ul>
-			<li><b>President</b> - Scott Rickard</li>
-			<li><b>Vice-President</b> - Jamie Powell</li>
-			<li><b>Treasurer</b> - Jamie Pirie</li>
-			<li><b>Women's Officer</b> - Gabi Everett</li>
-			<li><b>Secretary</b> - Matthew Van Schalkwyk</li>
-			<li><b>Webmaster</b> - Peter Weightman</li>
+	<section class="prose committee">
+		<h2>The 2022 Club Committee</h2>
+		<ul class="reset members">
+			<li>
+				<div class="profile-pic">
+					<div>SR</div>
+				</div>
+				<div class="content">
+					<p class="heading">President</p>
+					<p class="name">Scott Rickard</p>
+				</div>
+			</li>
+			<li>
+				<div class="profile-pic">
+					<div>JP</div>
+				</div>
+				<div class="content">
+					<p class="heading">Vice-President</p>
+					<p class="name">Jamie Powell</p>
+				</div>
+			</li>
+			<li>
+				<div class="profile-pic">
+					<div>JP</div>
+				</div>
+				<div class="content">
+					<p class="heading">Treasurer</p>
+					<p class="name">Jamie Pirie</p>
+				</div>
+			</li>
+			<li>
+				<div class="profile-pic">
+					<div>GE</div>
+				</div>
+				<div class="content">
+					<p class="heading">Women's Officer</p>
+					<p class="name">Gabi Everett</p>
+				</div>
+			</li>
+			<li>
+				<div class="profile-pic">
+					<div>MVS</div>
+				</div>
+				<div class="content">
+					<p class="heading">Secretary</p>
+					<p class="name">Matthew Van Schalkwyk</p>
+				</div>
+			</li>
+			<li>
+				<div class="profile-pic">
+					<img src="/committee/2022/Peter.jpg" aria-hidden="true" alt="" />
+				</div>
+				<div class="content">
+					<p class="heading">Webmaster</p>
+					<p class="name">Peter Weightman</p>
+				</div>
+			</li>
 		</ul>
 	</section>
 </main>
@@ -76,5 +133,37 @@
 <style>
 	.prose {
 		margin-inline-start: 0;
+	}
+	.members {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 2ch;
+	}
+	.members > li {
+		margin: 0 auto;
+	}
+	.members > li p {
+		margin-block: 0rem;
+	}
+	.members > li .content {
+		margin-block-start: 0.5rem;
+		text-align: center;
+	}
+	.members .profile-pic img {
+		width: 10rem;
+		border-radius: 1rem;
+	}
+	.members .profile-pic > div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2.5rem;
+		width: 10rem;
+		height: 10rem;
+		border-radius: 1rem;
+		background-color: var(--secondary-bg-color);
+	}
+	.members > li .heading {
+		margin-block-start: 0.5rem;
 	}
 </style>

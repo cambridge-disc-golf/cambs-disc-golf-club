@@ -181,12 +181,6 @@
 		<p><b>By Car:</b></p>
 		<p><b>By Bus:</b></p>
 	</section> -->
-	<!-- <picture>
-		<source src="/course.avif" type="image/avif" />
-		<source src="/course.webp" type="image/webp" />
-		<source src="/course.gif" type="image/gif" />
-		<img src="/course.png" alt="Map of the Papworth Disc Golf Course Layout" />
-	</picture> -->
 </main>
 
 <Footer />
