@@ -27,6 +27,7 @@
 		top: 0;
 		z-index: 1;
 		background-color: var(--secondary-bg-color);
+		border-block-end: 1px solid var(--color);
 	}
 	nav ul {
 		margin: 0;
