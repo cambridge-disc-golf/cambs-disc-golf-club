@@ -38,6 +38,59 @@
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					stroke-width="2"
+					d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+				/>
+			</svg>
+			<div>
+				<p class="heading">All welcome</p>
+				<p>No experience necessary</p>
+			</div>
+			<p class="subtle links">
+				<a href="/about">New members info</a><span class="separator">•</span><a
+					href="https://www.facebook.com/groups/115658245890790"
+					>Facebook Group</a
+				>
+			</p>
+		</li>
+		<li>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="icon-lg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+				/>
+			</svg>
+			<div>
+				<p class="heading">Regular Events</p>
+				<p>Weekly rounds & monthly tournaments</p>
+			</div>
+			<p class="subtle links">
+				<a href="#events">Events</a><span class="separator">•</span><a
+					href="https://www.facebook.com/groups/115658245890790"
+					>Facebook Group</a
+				>
+			</p>
+		</li>
+		<li>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="icon-lg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor"
+				aria-hidden="true"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
 					d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
 				/>
 				<path
@@ -56,33 +109,6 @@
 					>///incoming.exploring.winners</a
 				><span class="separator">•</span><a
 					href="https://goo.gl/maps/mjkuvnVjncsBhtCe8">Google Maps</a
-				>
-			</p>
-		</li>
-		<li>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				class="icon-lg"
-				fill="none"
-				viewBox="0 0 24 24"
-				stroke="currentColor"
-				aria-hidden="true"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-				/>
-			</svg>
-			<div>
-				<p class="heading">All welcome</p>
-				<p>No experience necessary</p>
-			</div>
-			<p class="subtle links">
-				<a href="/about">New members info</a><span class="separator">•</span><a
-					href="https://www.facebook.com/groups/115658245890790"
-					>Facebook Group</a
 				>
 			</p>
 		</li>
@@ -149,7 +175,7 @@
 		alt="Club members looking happy after a christmas jumper round"
 	/>
 	<section class="prose">
-		<h2>Events Calendar</h2>
+		<h2 id="events">Events Calendar</h2>
 		<ul class="reset event-list">
 			<li>
 				<p class="heading">Club Round</p>
@@ -160,6 +186,17 @@
 					> and let us know you're coming in the weekly club round roll-call. If
 					you are new to the sport and/or need to borrow any discs, let us know and
 					we'll be happy to help.
+				</p>
+			</li>
+			<li>
+				<p class="heading">Handicap Tournament</p>
+				<em>Last Sunday of each month at 11:00</em>
+				<p>
+					Join the <a href="https://www.facebook.com/groups/115658245890790"
+						>Facebook Group</a
+					> and let us know you're coming in the monthly handicap tournament roll-call.
+					If you are new to the sport and/or need to borrow any discs, let us know
+					and we'll be happy to help.
 				</p>
 			</li>
 			<li>
@@ -227,6 +264,10 @@
 		margin-block: 2rem;
 	}
 
+	h2 {
+		scroll-margin-block-start: 4rem;
+	}
+
 	.heading-cards {
 		display: flex;
 		flex-wrap: wrap;
@@ -235,7 +276,7 @@
 	}
 
 	.heading-cards li {
-		flex: 1 1 18rem;
+		flex: 1 1 20rem;
 		display: inline-grid;
 		grid-template-columns: auto auto;
 		align-items: center;
