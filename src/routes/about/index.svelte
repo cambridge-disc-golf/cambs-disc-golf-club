@@ -131,6 +131,9 @@
 <Footer />
 
 <style>
+	section {
+		margin-block-start: 2rem;
+	}
 	.prose {
 		margin-inline-start: 0;
 	}
