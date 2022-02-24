@@ -136,10 +136,11 @@
 	}
 	.members {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 		gap: 2ch;
 	}
 	.members > li {
+		width: clamp(120px, 80%, 170px);
 		margin: 0 auto;
 	}
 	.members > li p {
@@ -150,18 +151,21 @@
 		text-align: center;
 	}
 	.members .profile-pic img {
-		width: 10rem;
+		width: 100%;
+		aspect-ratio: 1;
 		border-radius: 1rem;
+		margin: 0 auto;
 	}
 	.members .profile-pic > div {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		font-size: 2.5rem;
-		width: 10rem;
-		height: 10rem;
+		width: 100%;
+		aspect-ratio: 1;
 		border-radius: 1rem;
 		background-color: var(--secondary-bg-color);
+		margin: 0 auto;
 	}
 	.members > li .heading {
 		margin-block-start: 0.5rem;
