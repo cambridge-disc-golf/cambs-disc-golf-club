@@ -40,9 +40,11 @@
 					<td>71</td>
 					<td>3</td>
 					<td
-						>Slightly uphill, with a double mando' between the two silver birch
-						trees, the basket is behind the shrub at end of left hand path.
-						Dropzone between the trees if you miss the mando'.</td
+						><p>
+							Slightly uphill, with a double mando' between the two silver birch
+							trees, the basket is behind the shrub at end of left hand path.
+							Dropzone between the trees if you miss the mando'.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -50,25 +52,30 @@
 					<td>66</td>
 					<td>3</td>
 					<td
-						>Trees on the left make this a dogleg left with the basket about 15m
-						behind the second left tree</td
+						><p>
+							Trees on the left make this a dogleg left with the basket about
+							15m behind the second left tree
+						</p></td
 					>
 				</tr>
 				<tr>
 					<td>3</td>
 					<td>57</td>
 					<td>3</td>
-					<td>A slight downhill with two trees narrowing the fairway.</td>
+					<td><p>A slight downhill with two trees narrowing the fairway.</p></td
+					>
 				</tr>
 				<tr>
 					<td>4</td>
 					<td>56</td>
 					<td>3</td>
 					<td
-						>Downhill with no height restriction off the tee. Two large grabby
-						pine trees either side of fairway guard the small level green, with
-						the basket a few metres to the right of the large centre tree at the
-						end of the fairway</td
+						><p>
+							Downhill with no height restriction off the tee. Two large grabby
+							pine trees either side of fairway guard the small level green,
+							with the basket a few metres to the right of the large centre tree
+							at the end of the fairway
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -76,8 +83,10 @@
 					<td>73</td>
 					<td>3</td>
 					<td
-						>A straight downhill hole with the road along the right hand tree
-						line out of bounds.</td
+						><p>
+							A straight downhill hole with the road along the right hand tree
+							line out of bounds.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -85,8 +94,10 @@
 					<td>45</td>
 					<td>3</td>
 					<td
-						>A short hole which still requires an accurate shot past a super
-						grabby pine tree only 5 to 6 metres to the right off the tee.</td
+						><p>
+							A short hole which still requires an accurate shot past a super
+							grabby pine tree only 5 to 6 metres to the right off the tee.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -94,8 +105,10 @@
 					<td>95</td>
 					<td>3</td>
 					<td
-						>A dogleg right off the tee with a mando' tree on the right
-						preventing cutting the corner.</td
+						><p>
+							A dogleg right off the tee with a mando' tree on the right
+							preventing cutting the corner.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -103,9 +116,11 @@
 					<td>71</td>
 					<td>3</td>
 					<td
-						>Fresh from the 'up,down dogleg' hole 7 we have hole 8 with an
-						imposing mando' formed by the huge bough of a pine tree a few metres
-						from the tee.</td
+						><p>
+							Fresh from the 'up,down dogleg' hole 7 we have hole 8 with an
+							imposing mando' formed by the huge bough of a pine tree a few
+							metres from the tee.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -113,8 +128,10 @@
 					<td>68</td>
 					<td>3</td>
 					<td
-						>This hole brings the OB road on the left and low limbed trees on
-						the right into play.</td
+						><p>
+							This hole brings the OB road on the left and low limbed trees on
+							the right into play.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -122,8 +139,11 @@
 					<td>87</td>
 					<td>3</td>
 					<td
-						>Start of back 9 on a flat hole with a fairway which is narrowed to
-						5 or 6m gap by a large patch of shrubbery left, and a tree on right.</td
+						><p>
+							Start of back 9 on a flat hole with a fairway which is narrowed to
+							5 or 6m gap by a large patch of shrubbery left, and a tree on
+							right.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -131,9 +151,11 @@
 					<td>73</td>
 					<td>3</td>
 					<td
-						>A downhill hole with the basket located in the 'jail' copse of
-						three small trees located centre/left in photo at the end of the
-						fairway.</td
+						><p>
+							A downhill hole with the basket located in the 'jail' copse of
+							three small trees located centre/left in photo at the end of the
+							fairway.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -141,9 +163,11 @@
 					<td>41</td>
 					<td>3</td>
 					<td
-						>A short hole teeing from the grass for a few metres into a tunnel
-						formed by shrubs and trees. The basket is off set left by a few
-						metres at the end of the tunnel close to a felled pine tree.</td
+						><p>
+							A short hole teeing from the grass for a few metres into a tunnel
+							formed by shrubs and trees. The basket is off set left by a few
+							metres at the end of the tunnel close to a felled pine tree.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -151,9 +175,11 @@
 					<td>53</td>
 					<td>3</td>
 					<td
-						>The tunnel theme continues with a longer shot this time, before
-						reaching a tunnel with a slightly wider gap than on the previous
-						hole. The basket is visible from the tee on this one.</td
+						><p>
+							The tunnel theme continues with a longer shot this time, before
+							reaching a tunnel with a slightly wider gap than on the previous
+							hole. The basket is visible from the tee on this one.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -161,13 +187,15 @@
 					<td>124</td>
 					<td>4</td>
 					<td
-						>The last of 3 tunnel holes in a row is one of the hardest on the
-						course. It begins in the tunnel and requires low, straight shots to
-						cover the 95 or so metres to the end of the tunnel which opens up
-						towards the exit. Anything left or right often leaves difficult
-						shots back on to fairway with still a good distance to the hole. The
-						basket is a further 30 ish metres on the grass in front, completely
-						unobstructed.</td
+						><p>
+							The last of 3 tunnel holes in a row is one of the hardest on the
+							course. It begins in the tunnel and requires low, straight shots
+							to cover the 95 or so metres to the end of the tunnel which opens
+							up towards the exit. Anything left or right often leaves difficult
+							shots back on to fairway with still a good distance to the hole.
+							The basket is a further 30 ish metres on the grass in front,
+							completely unobstructed.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -175,9 +203,11 @@
 					<td>70</td>
 					<td>3</td>
 					<td
-						>Affectionately named "Old Stumpy" due to the raised basket placed
-						on an old tree stump. An uphill hole with a narrow gap between two
-						large pine trees.</td
+						><p>
+							Affectionately named "Old Stumpy" due to the raised basket placed
+							on an old tree stump. An uphill hole with a narrow gap between two
+							large pine trees.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -185,8 +215,10 @@
 					<td>118</td>
 					<td>4</td>
 					<td
-						>A long hole (for Papworth) running downhill parallel with the OB
-						road left.</td
+						><p>
+							A long hole (for Papworth) running downhill parallel with the OB
+							road left.
+						</p></td
 					>
 				</tr>
 				<tr>
@@ -194,15 +226,21 @@
 					<td>71</td>
 					<td>3</td>
 					<td
-						>A slightly undulating hole rising from tee to the tree lined
-						road.('river' OB)</td
+						><p>
+							A slightly undulating hole rising from tee to the tree lined
+							road.('river' OB)
+						</p></td
 					>
 				</tr>
 				<tr>
 					<td>18</td>
 					<td>85</td>
 					<td>3</td>
-					<td>The last but not least of the downhill stretch to finish.</td>
+					<td
+						><p>
+							The last but not least of the downhill stretch to finish.
+						</p></td
+					>
 				</tr>
 			</tbody>
 		</table>
@@ -223,6 +261,9 @@
 	table thead,
 	table tbody td:not(:last-of-type) {
 		text-align: center;
+	}
+	table p {
+		margin: 0;
 	}
 
 	@media (max-width: 33rem) {

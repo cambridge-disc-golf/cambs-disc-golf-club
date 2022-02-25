@@ -1,6 +1,13 @@
 @font-face {
 	font-family: 'Georama';
 	font-style: normal;
+	font-weight: normal;
+	src: url('/Georama-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Georama';
+	font-style: normal;
 	font-weight: 700;
 	src: url('/Georama-Bold.ttf') format('truetype');
 }
@@ -29,10 +36,15 @@
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: "Georama", sans-serif;
 	background: var(--bg-color);
 	color: var(--color);
 	margin: 0;
+}
+
+p {
+	letter-spacing: 0.02em;
+	line-height: 1.3em;
 }
 
 main {
