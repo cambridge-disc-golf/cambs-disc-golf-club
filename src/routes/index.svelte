@@ -69,7 +69,7 @@
 			</svg>
 			<div>
 				<p class="heading">Regular Events</p>
-				<p>Weekly rounds & monthly tournaments</p>
+				<p>Club rounds & tournaments</p>
 			</div>
 			<p class="subtle links">
 				<a href="#events">Events</a><span class="separator">•</span><a
@@ -83,7 +83,7 @@
 				xmlns="http://www.w3.org/2000/svg"
 				class="icon-lg"
 				fill="none"
-				viewBox="0 0 24 24"
+				viewBox="0 0 19 24"
 				stroke="currentColor"
 				aria-hidden="true"
 			>
