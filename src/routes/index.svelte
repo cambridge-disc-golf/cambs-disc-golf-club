@@ -46,9 +46,8 @@
 				<p>No experience necessary</p>
 			</div>
 			<p class="subtle links">
-				<a href="/about">New members info</a><span class="separator">•</span><a
-					href="https://www.facebook.com/groups/115658245890790"
-					>Facebook Group</a
+				<a href="/about">About us</a><span class="separator">•</span><a
+					href="/first-visit">On your first visit</a
 				>
 			</p>
 		</li>

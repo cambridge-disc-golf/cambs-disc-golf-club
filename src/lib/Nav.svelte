@@ -1,7 +1,7 @@
 <script>
 	/** @type {"home"|"about"|"courses"} */
 	export let currentPage;
-	const pages = ['home', 'about', 'courses'];
+	const pages = ['home', 'about', 'courses', 'first-visit'];
 </script>
 
 <nav>
@@ -13,7 +13,7 @@
 						aria-current={currentPage === page && 'page'}
 						href={`/${page !== 'home' ? page : ''}`}
 					>
-						{page}</a
+						{page.replace('-', ' ')}</a
 					>
 				</li>
 			{/each}
