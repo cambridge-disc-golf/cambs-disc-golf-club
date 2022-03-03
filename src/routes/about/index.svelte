@@ -72,7 +72,7 @@
 		<ul class="reset members">
 			<li>
 				<div class="profile-pic">
-					<div>SR</div>
+					<img src="/committee/2022/Scott.jpg" aria-hidden="true" alt="" />
 				</div>
 				<div class="content">
 					<p class="heading">President</p>
@@ -81,7 +81,7 @@
 			</li>
 			<li>
 				<div class="profile-pic">
-					<div>JP</div>
+					<img src="/committee/2022/Jamie_VP.jpg" aria-hidden="true" alt="" />
 				</div>
 				<div class="content">
 					<p class="heading">Vice-President</p>
@@ -99,7 +99,7 @@
 			</li>
 			<li>
 				<div class="profile-pic">
-					<div>GE</div>
+					<img src="/committee/2022/Gabi.jpg" aria-hidden="true" alt="" />
 				</div>
 				<div class="content">
 					<p class="heading">Women's Officer</p>
