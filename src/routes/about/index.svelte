@@ -19,8 +19,8 @@
 			Cambridge Disc Golf Club was founded in 2021 with the objectives of
 			promoting health, wellness, happiness and community development through
 			the learning and enjoyment of disc golf to the Cambridgeshire area. This
-			shall be done by means of training sessions, tournaments, leagues, social
-			events and more.
+			will be achieved by means of training sessions, tournaments, leagues,
+			social events and more.
 		</p>
 	</section>
 	<section class="prose">
@@ -28,9 +28,9 @@
 		<p>
 			We have two courses at the moment, the "Starter Course", and "Papworth
 			White". The Starter Course is a great place to start your journey, and is
-			the most popular course. The Papworth White course is for when you want a
-			bit more of a challenge, with three longer open holes replacing some of
-			the shorter, wooded ones.
+			the most popular course. The Papworth White course is a bit more of a
+			challenge, with three longer open holes replacing some of the shorter,
+			wooded ones.
 		</p>
 		<picture>
 			<source src="/course.avif" type="image/avif" />
@@ -53,12 +53,12 @@
 			allowed to change discs each throw.
 		</p>
 		<p>
-			Some holes with have out-of-bounds (OB) areas, where you will recieve a
-			penalty stroke if you land in it, and have to take your next throw from
-			where it last went out of bounds. At Papworth, the first hole has a
-			"mandatory" ("mando"), where you have to throw between two trees. If you
-			miss this, you will recieve a penalty stroke, and have to take your next
-			shot at a "drop zone" between the two trees.
+			Some holes have out-of-bounds (OB) areas, where you receive a penalty
+			stroke if you land in it. Your next throw is from where it last went out
+			of bounds. At Papworth, the first hole has a "mandatory" ("mando"), where
+			you have to throw between two trees. If you miss this, you recieve a
+			penalty stroke, and have to take your next shot at a "drop zone" between
+			the two trees.
 		</p>
 		<p>
 			Disc golf discs come in different types, shapes, weights and colours. The
