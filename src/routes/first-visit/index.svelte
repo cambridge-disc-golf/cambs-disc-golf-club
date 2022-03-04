@@ -52,7 +52,7 @@
 		</ol>
 	</section>
 	<section>
-		<img src="/static/scott-drive-hole-11.jpg" alt="" />
+		<img src="/scott-drive-hole-11.jpg" alt="" />
 	</section>
 </main>
 
