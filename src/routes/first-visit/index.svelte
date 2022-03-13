@@ -101,7 +101,7 @@
 	}
 
 	li::before {
-		content: counter(first-visit-counter) '.';
+		content: counter(first-visit-counter);
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
