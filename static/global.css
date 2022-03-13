@@ -20,6 +20,7 @@
 :root {
 	--bg-color: #eee;
 	--secondary-bg-color: #ddd;
+	--accent-color: hsl(124, 100%, 65%);
 
 	--dark-color: #222;
 	--light-color: #eee;
@@ -31,6 +32,7 @@
 	:root {
 		--bg-color: #222;
 		--secondary-bg-color: #333;
+		--accent-color: hsl(124, 100%, 25%);
 		--color: var(--light-color);
 	}
 }
@@ -40,6 +42,10 @@ body {
 	background: var(--bg-color);
 	color: var(--color);
 	margin: 0;
+}
+
+#bubbles {
+	fill: var(--secondary-bg-color);
 }
 
 p {
