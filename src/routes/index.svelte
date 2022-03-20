@@ -168,11 +168,6 @@
 			>.
 		</p>
 	</section>
-	<img
-		class="jumper-round-img"
-		src="/christmas-round.jpg"
-		alt="Club members looking happy after a christmas jumper round"
-	/>
 	<section class="prose">
 		<h2 id="events">Events Calendar</h2>
 		<ul class="reset event-list">
@@ -217,6 +212,25 @@
 		<p><b>By Car:</b></p>
 		<p><b>By Bus:</b></p>
 	</section> -->
+	<div class="full-bleed home-images">
+		<img
+			src="/hole-8-willem.jpg"
+			alt="Male disc golf player under a branch framing the shot"
+		/>
+		<img
+			class="jumper-round-img"
+			src="/christmas-round.jpg"
+			alt="Club members looking happy after a christmas jumper round"
+		/>
+		<img
+			src="/hole-15-putts.jpg"
+			alt="Two players putting towards an elevated basket"
+		/>
+		<img
+			src="/hole-8-leia.jpg"
+			alt="Female disc golf player prparing to throw around a tree to the basket"
+		/>
+	</div>
 </main>
 
 <Footer />
@@ -251,16 +265,8 @@
 		object-fit: cover;
 		object-position: center;
 	}
-	main > img,
-	main > picture img {
-		display: block;
-		width: 100%;
-		max-width: 45rem;
-		margin-inline: auto;
-	}
-
 	main > * + * {
-		margin-block: 2rem;
+		margin-block-start: 2rem;
 	}
 
 	h2 {
@@ -312,5 +318,11 @@
 	}
 	.event-list li p {
 		margin-block-end: 0;
+	}
+	.home-images {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		gap: 1rem;
+		justify-items: center;
 	}
 </style>

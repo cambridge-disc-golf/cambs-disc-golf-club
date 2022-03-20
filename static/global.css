@@ -59,11 +59,20 @@ main {
 
 .container {
 	margin: 0 auto;
-	max-width: 62rem;
+	display: grid;
+	grid-template-columns: 1fr min(60rem, 100%) 1fr;
+}
+
+.container > * {
+  grid-column: 2;
+}
+
+.container > .full-bleed {
+  width: 100%;
+  grid-column: 1 / 4;
 }
 
 .prose {
-	margin: 0 auto;
 	max-width: 80ch;
 }
 
