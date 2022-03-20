@@ -108,7 +108,7 @@
 			</li>
 			<li>
 				<div class="profile-pic">
-					<div>MVS</div>
+					<img src="/committee/2022/Matt.jpg" aria-hidden="true" alt="" />
 				</div>
 				<div class="content">
 					<p class="heading">Secretary</p>
