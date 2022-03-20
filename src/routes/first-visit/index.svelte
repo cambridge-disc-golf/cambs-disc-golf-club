@@ -38,7 +38,7 @@
 		</div>
 	</section>
 	<svg
-		viewbox="0 0 2400 128"
+		viewBox="0 0 2400 128"
 		class="wavy-hr"
 		xmlns="http://www.w3.org/2000/svg"
 	>
