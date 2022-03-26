@@ -5,6 +5,7 @@
 <script>
 	import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import EventList from '$lib/EventList.svelte';
 </script>
 
 <div class="home-hero-container">
@@ -168,44 +169,8 @@
 			>.
 		</p>
 	</section>
-	<section class="prose">
-		<h2 id="events">Events Calendar</h2>
-		<ul class="reset event-list">
-			<li>
-				<p class="heading">Club Round</p>
-				<em>Every Sunday at 11:00</em>
-				<p>
-					Join the <a href="https://www.facebook.com/groups/115658245890790"
-						>Facebook Group</a
-					> and let us know you're coming in the weekly club round roll-call. If
-					you are new to the sport and/or need to borrow any discs, let us know and
-					we'll be happy to help.
-				</p>
-			</li>
-			<li>
-				<p class="heading">Handicap Tournament</p>
-				<em>Last Sunday of each month at 11:00</em>
-				<p>
-					Join the <a href="https://www.facebook.com/groups/115658245890790"
-						>Facebook Group</a
-					> and let us know you're coming in the monthly handicap tournament roll-call.
-					If you are new to the sport and/or need to borrow any discs, let us know
-					and we'll be happy to help.
-				</p>
-			</li>
-			<li>
-				<p class="heading">Notts DG visits Papworth</p>
-				<em>Sunday, 29th May 2022 at 11:00</em>
-				<p>
-					The Cambridge Disc Golf club has grown a lot in size in the last year.
-					We want to celebrate that by bringing more people to try out our local
-					course Papworth. If you're a member of Cambridge Disc Golf Club, join
-					the event here: <a
-						href="https://www.facebook.com/events/889072438434550">link</a
-					>.
-				</p>
-			</li>
-		</ul>
+	<section>
+		<EventList />
 	</section>
 	<!-- <section class="prose">
 		<h2>Getting Here</h2>
@@ -308,16 +273,6 @@
 	}
 	.heading-cards li p {
 		margin-block: 0.5ex;
-	}
-	.event-list li {
-		background-color: var(--secondary-bg-color);
-		max-width: 50ch;
-		padding: 1rem;
-		border-radius: 0.5rem;
-		margin-block-end: 1rem;
-	}
-	.event-list li p {
-		margin-block-end: 0;
 	}
 	.home-images {
 		display: grid;

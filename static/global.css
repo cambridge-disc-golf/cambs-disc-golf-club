@@ -51,6 +51,7 @@ body {
 p {
 	letter-spacing: 0.02em;
 	line-height: 1.3em;
+	margin-block-end: 0;
 }
 
 main {
