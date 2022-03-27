@@ -276,8 +276,13 @@
 	}
 	.home-images {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
 		justify-items: center;
+	}
+	@media (max-width: 45rem) {
+		.home-images {
+			grid-template-columns: 100%;
+		}
 	}
 </style>
