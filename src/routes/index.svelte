@@ -73,8 +73,8 @@
 			</div>
 			<p class="subtle links">
 				<a href="#events">Events</a><span class="separator">•</span><a
-					href="https://www.facebook.com/groups/115658245890790"
-					>Facebook Group</a
+					href="https://calendar.google.com/calendar/u/1?cid=ZGlzY2dvbGZjYW1icmlkZ2VAZ21haWwuY29t"
+					>Google Calendar</a
 				>
 			</p>
 		</li>
