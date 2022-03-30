@@ -4,8 +4,8 @@
 </script>
 
 <svelte:head>
-	<link rel="stylesheet" href="../../../node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
-	<script src="../../../node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+	<link rel="stylesheet" href="/lite-youtube-embed/lite-yt-embed.css" />
+	<script src="/lite-youtube-embed/lite-yt-embed.js"></script>
 </svelte:head>
 
 <script>
