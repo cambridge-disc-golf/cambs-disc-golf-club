@@ -6,7 +6,9 @@ export async function get() {
 	const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
 	const calendarId = "discgolfcambridge@gmail.com";
 
-	const events = await fetch(`https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${new Date().toISOString()}&singleEvents=true&orderBy=startTime`);
+	const now = new Date();
+	const sixMonthsFromNow = new Date(now.getFullYear(), now.getMonth() + 6, now.getDate());
+	const events = await fetch(`https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${now.toISOString()}&timeMax=${sixMonthsFromNow.toISOString()}&singleEvents=true&orderBy=startTime`);
 	const data = await events.json();
 
 	if (data.items) {

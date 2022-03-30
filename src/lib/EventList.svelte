@@ -16,9 +16,22 @@
 			};
 		});
 
+		const now = new Date();
+		const monthFromNow = new Date(now.getFullYear(), now.getMonth() + 1, now.getDate());
+
+		const upcomingGroupedByDate = parsedEvents.filter(ev => new Date(ev.startDate) <= monthFromNow).reduce((grouped, ev) => {
+			if (grouped.has(ev.displayDate)) {
+				grouped.get(ev.displayDate).push(ev);
+			}
+			else {
+				grouped.set(ev.displayDate, [ev]);
+			}
+			return grouped;
+		}, new Map());
+
 		return {
-			upcoming: parsedEvents.slice(0, 3),
-			future: parsedEvents.slice(3).filter(ev => !ev.isRecurring),
+			upcoming: upcomingGroupedByDate,
+			future: parsedEvents.filter(ev => !ev.isRecurring && new Date(ev.startDate) > monthFromNow),
 		};
 	}
 	const eventsPromise = getEvents();
@@ -33,17 +46,23 @@
 	<p>Loading...</p>
 {:then data}
 	<h3>Upcoming</h3>
-	{#if data.upcoming.length}
+	{#if data.upcoming.size}
 		<ul class="reset event-list">
-			{#each data.upcoming as event}
+			{#each Array.from(data.upcoming) as [displayDate, events]}
 				<li>
-					<div class="event-header">
-						<span class="ev-date">{event.displayDate}</span>
-						<p class="ev-title heading">{event.title}</p>
-						<em class="ev-time">{event.allDay ? "All day" : `${event.displayStart} - ${event.displayEnd}`}</em>
-					</div>
-
-					{#if !event.isRecurring && event.description}<p class="ev-desc">{@html event.description}</p>{/if}
+					<ul class="reset">
+						{#each events as event, i}
+							<li>
+								<div class="event-header">
+									<span class="ev-date" class:sr-only={i > 0}>{displayDate}</span>
+									<p class="ev-title heading">{event.title}</p>
+									<em class="ev-time">{event.allDay ? "All day" : `${event.displayStart} - ${event.displayEnd}`}</em>
+								</div>
+								
+								{#if !event.isRecurring && event.description}<p class="ev-desc">{@html event.description}</p>{/if}
+							</li>
+						{/each}
+					</ul>
 				</li>
 			{/each}
 		</ul>
@@ -75,20 +94,28 @@
 	.event-list {
 		margin-block: 0;
 	}
-	.event-list li {
+	.event-list > li,
+	.future-events > li {
+		padding: 1rem;
+		padding-inline: 0;
+	}
+	.event-list > li + li,
+	.future-events > li + li {
+		border-block-start: 1px solid var(--secondary-bg-color);
+	}
+	.event-list ul li,
+	.future-events li {
 		display: grid;
 		grid-template-columns: auto 1fr;
 		grid-template-areas: "date time" "title title" "desc desc";
 		align-items: center;
 		column-gap: 0.5rem;
-		
-		padding: 1rem;
-		padding-inline: 0;
 	}
-	.event-list li + li {
-		border-block-start: 1px solid var(--secondary-bg-color);
+	.event-list ul li + li {
+		padding-block-start: 0.5rem;
 	}
-	.event-list li:last-child {
+	.event-list ul li:last-child,
+	.future-events li:last-child {
 		padding-block-end: 0;
 	}
 	.event-header {
@@ -104,7 +131,8 @@
 	}
 
 	@media (min-width: 30rem) {
-		.event-list li {
+		.event-list ul li,
+		.future-events li {
 			grid-template-columns: 7rem 1fr 7rem;
 			grid-template-areas: "date title time" ". desc desc";
 			padding-inline: 1rem;
