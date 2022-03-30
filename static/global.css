@@ -147,8 +147,26 @@ table tbody tr:nth-of-type(2n) {
 	background-color: var(--secondary-bg-color);
 }
 
+.flex-center-children {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .nowrap { white-space: nowrap; }
 
 .w-full { width: 100%; }
 
 .m-0 { margin: 0; }
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
