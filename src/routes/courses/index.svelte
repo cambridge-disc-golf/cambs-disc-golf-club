@@ -3,6 +3,11 @@
 	export const hydrate = false;
 </script>
 
+<svelte:head>
+	<link rel="stylesheet" href="../../../node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
+	<script src="../../../node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
+</svelte:head>
+
 <script>
 	import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';
@@ -248,7 +253,9 @@
 
 	<section>
 		<h2>Papworth White</h2>
-		<p>Info Coming Soon</p>
+		<div class="video-container">
+			<lite-youtube videoid="GJZ45rMH7rY" playlabel="Papworth long course playthrough"></lite-youtube>
+		</div>
 	</section>
 </main>
 
@@ -264,6 +271,9 @@
 	}
 	table p {
 		margin: 0;
+	}
+	.video-container {
+		margin-block-start: 1rem;
 	}
 
 	@media (max-width: 33rem) {

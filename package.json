@@ -16,5 +16,8 @@
     "svelte": "^3.46.4",
     "svelte-preprocess": "^4.10.4"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "lite-youtube-embed": "^0.2.0"
+  }
 }
