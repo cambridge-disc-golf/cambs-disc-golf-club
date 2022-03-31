@@ -11,8 +11,8 @@
 					<li><a aria-current="page" href="/">Home</a></li>
 					<li><a href="/about">About</a></li>
 					<li><a href="/courses">Courses</a></li>
-					<li><a href="/bag-tag">Bag Tag Standings</a></li>
-					<li><a href="/handicaps">Handicaps</a></li>
+					<!-- <li><a href="/bag-tag">Bag Tag Standings</a></li>
+					<li><a href="/handicaps">Handicaps</a></li> -->
 				</ul>
 			</div>
 			<div>
