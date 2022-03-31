@@ -54,7 +54,7 @@
 						{#each events as event, i}
 							<li>
 								<div class="event-header">
-									<span class="ev-date" class:sr-only={i > 0}>{displayDate}</span>
+									<span class="ev-date">{displayDate}</span>
 									<p class="ev-title heading">{event.title}</p>
 									<em class="ev-time">{event.allDay ? "All day" : `${event.displayStart} - ${event.displayEnd}`}</em>
 								</div>
@@ -140,6 +140,17 @@
 		.ev-date,
 		.ev-time {
 			text-align: center;
+		}
+		.event-list ul li + li .ev-date {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0, 0, 0, 0);
+			white-space: nowrap;
+			border-width: 0;
 		}
 	}
 </style>
