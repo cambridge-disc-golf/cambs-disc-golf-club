@@ -1,7 +1,7 @@
 <script>
-	/** @type {"home"|"about"|"courses"|"first-visit"} */
+	/** @type {"home"|"about"|"courses"} */
 	export let currentPage;
-	const pages = ['home', 'about', 'courses', 'first-visit'];
+	const pages = ['home', 'about', 'courses'];
 </script>
 
 <nav>

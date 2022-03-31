@@ -48,7 +48,7 @@
 			</div>
 			<p class="subtle links">
 				<a href="/about">About us</a><span class="separator">•</span><a
-					href="/first-visit">On your first visit</a
+					href="#first-visit">On your first visit</a
 				>
 			</p>
 		</li>
@@ -176,6 +176,51 @@
 			><span>Join our Facebook Group</span>
 		</a>
 	</div>
+	<section id="first-visit">
+		<div class="container">
+			<h2>First Visit?</h2>
+		</div>
+		<div class="container card-container">
+			<div>
+				<h3>Before the Day</h3>
+				<ol>
+					<li>
+						Check out our <a href="/#events">Calendar</a> to find a round or tournament
+						to join us for (usually every Sunday).
+					</li>
+					<li>
+						Let us know you're coming! Post in our <a
+							href="https://www.facebook.com/groups/115658245890790"
+							>Facebook Group</a
+						>, or send us a message.
+					</li>
+					<li>
+						If you don't have any discs, let us know and we'll bring some along.
+					</li>
+				</ol>
+			</div>
+			<div>
+				<h3>On the Day</h3>
+				<ol>
+					<li>
+						Check the forecast and dress approriately (we still play in wind and
+						rain!)
+					</li>
+					<li>
+						Give yourself long enough to arrive on time.
+						<a href="https://goo.gl/maps/mjkuvnVjncsBhtCe8">Google Maps</a>
+						<!-- Advice for <a
+							href="/#getting-here">getting here</a
+						>. -->
+					</li>
+					<li>
+						If you haven't played before, before the round we'll give you a
+						short lesson in how to throw & play.
+					</li>
+				</ol>
+			</div>
+		</div>
+	</section>
 	<section>
 		<EventList />
 	</section>
@@ -289,6 +334,24 @@
 	}
 	.join-fb-group > span {
 		margin-inline-start: 1ch;
+	}
+	#first-visit .card-container {
+		display: flex;
+		column-gap: 1rem;
+		flex-wrap: wrap;
+		margin-block-start: 1rem;
+	}
+	#first-visit .card-container > div {
+		flex: 1 1 20rem;
+		background-color: var(--secondary-bg-color);
+		padding: 1rem 1.5rem 1rem 1rem;
+		border-radius: 0.5rem;
+	}
+	#first-visit .card-container > div > h3 {
+		text-align: center;
+	}
+	#first-visit .card-container > div > ol li {
+		margin-block-start: 0.5rem;
 	}
 	.home-images {
 		display: grid;
