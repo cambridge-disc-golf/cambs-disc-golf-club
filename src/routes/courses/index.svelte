@@ -5,7 +5,7 @@
 
 <svelte:head>
 	<link rel="stylesheet" href="/lite-youtube-embed/lite-yt-embed.css" />
-	<script src="/lite-youtube-embed/lite-yt-embed.js"></script>
+	<script src="/lite-youtube-embed/lite-yt-embed.mjs"></script>
 </svelte:head>
 
 <script>
