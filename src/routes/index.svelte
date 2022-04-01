@@ -231,19 +231,23 @@
 	</section> -->
 	<div class="full-bleed home-images">
 		<img
+			loading="lazy"
 			src="/hole-8-willem.jpg"
 			alt="Male disc golf player under a branch framing the shot"
 		/>
 		<img
+			loading="lazy"
 			class="jumper-round-img"
 			src="/christmas-round.jpg"
 			alt="Club members looking happy after a christmas jumper round"
 		/>
 		<img
+			loading="lazy"
 			src="/hole-15-putts.jpg"
 			alt="Two players putting towards an elevated basket"
 		/>
 		<img
+			loading="lazy"
 			src="/hole-8-leia.jpg"
 			alt="Female disc golf player prparing to throw around a tree to the basket"
 		/>
