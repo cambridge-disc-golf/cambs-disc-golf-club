@@ -10,7 +10,7 @@
 
 <div class="home-hero-container">
 	<picture>
-		<source src="/leia-hero.webp" type="image/webp" />
+		<source srcset="/leia-hero.webp" type="image/webp" />
 		<img
 			class="hero-img"
 			src="/leia-hero.jpg"
