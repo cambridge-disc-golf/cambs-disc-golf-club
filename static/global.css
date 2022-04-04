@@ -3,6 +3,7 @@
 	font-style: normal;
 	font-weight: normal;
 	src: url('/Georama-Regular.ttf') format('truetype');
+	font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
 	font-style: normal;
 	font-weight: 700;
 	src: url('/Georama-Bold.ttf') format('truetype');
+	font-display: swap;
 }
 
 * {
