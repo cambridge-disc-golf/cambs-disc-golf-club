@@ -1,4 +1,5 @@
 <script context="module">
+	export const prerender = false;
 	export async function load({ fetch }) {
 		const url = `/handicaps.json`;
 		const res = await fetch(url);

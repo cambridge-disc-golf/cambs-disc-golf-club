@@ -1,8 +1,3 @@
-<script context="module">
-	export const prerender = true;
-	export const hydrate = false;
-</script>
-
 <svelte:head>
 	<link rel="stylesheet" href="/lite-youtube-embed/lite-yt-embed.css" />
 	<script src="/lite-youtube-embed/lite-yt-embed.mjs"></script>
