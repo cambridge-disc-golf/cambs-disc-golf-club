@@ -35,13 +35,13 @@
 				<p class="heading" id="footer-ext-links-heading">Disc Golf Associations (DGAs)</p>
 				<ul aria-labelledby="footer-ext-links-heading">
 					<li>
-						<a href="https://bdga.org.uk">British DGA</a>
+						<a href="https://bdga.org.uk" target="_blank" rel="noreferrer">British DGA</a>
 					</li>
 					<li>
-						<a href="https://ukwdga.org">UK Women's DGA</a>
+						<a href="https://ukwdga.org" target="_blank" rel="noreferrer">UK Women's DGA</a>
 					</li>
 					<li>
-						<a href="https://www.pdga.com">Professional DGA</a>
+						<a href="https://www.pdga.com" target="_blank" rel="noreferrer">Professional DGA</a>
 					</li>
 				</ul>
 			</div>
