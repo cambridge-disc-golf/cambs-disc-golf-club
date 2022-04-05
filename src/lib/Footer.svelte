@@ -31,6 +31,20 @@
 					</li>
 				</ul>
 			</div>
+			<div>
+				<p class="heading" id="footer-ext-links-heading">Disc Golf Associations (DGAs)</p>
+				<ul aria-labelledby="footer-ext-links-heading">
+					<li>
+						<a href="https://bdga.org.uk">British DGA</a>
+					</li>
+					<li>
+						<a href="https://ukwdga.org">UK Women's DGA</a>
+					</li>
+					<li>
+						<a href="https://www.pdga.com">Professional DGA</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="footer-copyright">
 			<img class="logo" src="/CamDG.png" alt="Logo" />
