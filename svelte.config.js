@@ -9,7 +9,9 @@ const config = {
 
 	kit: {
 		adapter: netlify(),
-		prerender: true,
+		prerender: {
+			default: true,
+		},
 	},
 };
 
