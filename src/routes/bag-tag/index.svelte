@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Bag Tag League | CamDG</title>
+	<meta name="description" content="League standings for the CamDG bag tag league." />
+</svelte:head>
+
 <script context="module">
 	export const prerender = false;
 	export async function load({ fetch }) {

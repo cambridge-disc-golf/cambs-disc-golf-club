@@ -1,4 +1,6 @@
 <svelte:head>
+	<title>Courses | CamDG</title>
+	<meta name="description" content="An overview of the courses in Papworth that the club regularly plays." />
 	<link rel="stylesheet" href="/lite-youtube-embed/lite-yt-embed.css" />
 	<script src="/lite-youtube-embed/lite-yt-embed.mjs"></script>
 </svelte:head>

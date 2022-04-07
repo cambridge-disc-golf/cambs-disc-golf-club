@@ -1,3 +1,9 @@
+<svelte:head>
+	<title>Cambridge Disc Golf Club</title>
+	<meta name="description" content="Home page for the Cambridge Disc Golf Club.
+		The club aims to provide opportunities for players in the Cambridgeshire area." />
+</svelte:head>
+
 <script>
 	import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';

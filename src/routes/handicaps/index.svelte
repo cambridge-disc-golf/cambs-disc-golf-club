@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Handicaps | CamDG</title>
+	<meta name="description" content="Handicaps for the members of CamDG" />
+</svelte:head>
+
 <script context="module">
 	export const prerender = false;
 	export async function load({ fetch }) {
