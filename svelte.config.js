@@ -8,7 +8,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: netlify(),
+		adapter: netlify({ edge: true }),
 		prerender: {
 			default: true,
 		},
