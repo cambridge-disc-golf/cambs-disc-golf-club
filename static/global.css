@@ -1,16 +1,22 @@
+/* georama-regular - latin */
 @font-face {
 	font-family: 'Georama';
 	font-style: normal;
 	font-weight: normal;
-	src: url('/Georama-Regular.ttf') format('truetype');
+	src: url('/fonts/georama-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('/fonts/georama-v7-latin-regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		url('/fonts/georama-v7-latin-regular.ttf') format('truetype'); /* Safari, Android, iOS */
 	font-display: swap;
 }
-
+  
+/* georama-700 - latin */
 @font-face {
 	font-family: 'Georama';
 	font-style: normal;
 	font-weight: 700;
-	src: url('/Georama-Bold.ttf') format('truetype');
+	src: url('/fonts/georama-v7-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('/fonts/georama-v7-latin-700.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		url('/fonts/georama-v7-latin-700.ttf') format('truetype'); /* Safari, Android, iOS */
 	font-display: swap;
 }
 
