@@ -225,6 +225,12 @@
 	</section>
 	<section>
 		<EventList />
+		<h3 id="events-links-heading">UK Events</h3>
+		<ul class="events-links-list">
+			<li><a href="https://bdga.org.uk/events/">BDGA Events</a></li>
+			<li><a href="https://ukwdga.org/events/">UKWDGA Events</a></li>
+			<li><a href="https://www.discgolfscene.com/tournaments/England/">Disc Golf Scene</a></li>
+		</ul>
 	</section>
 	<!-- <section class="prose">
 		<h2>Getting Here</h2>
@@ -302,7 +308,6 @@
 		justify-content: center;
 		gap: 1rem;
 	}
-
 	.heading-cards li {
 		flex: 1 1 20rem;
 		display: inline-grid;
@@ -314,7 +319,6 @@
 		padding: 1rem 1.5rem 1rem 1rem;
 		border-radius: 0.5rem;
 	}
-
 	.heading-cards li .links {
 		grid-column: span 2;
 		display: flex;
@@ -332,6 +336,7 @@
 	.heading-cards li p {
 		margin-block: 0.5ex;
 	}
+
 	.join-fb-group {
 		background-color: var(--secondary-bg-color);
 		padding: 1rem 1.5rem 1rem 1rem;
@@ -341,6 +346,7 @@
 	.join-fb-group > span {
 		margin-inline-start: 1ch;
 	}
+
 	#first-visit .card-container {
 		display: flex;
 		column-gap: 1rem;
@@ -359,6 +365,23 @@
 	#first-visit .card-container > div > ol li {
 		margin-block-start: 0.5rem;
 	}
+
+	#events-links-heading {
+		margin-block-start: 2rem;
+	}
+	.events-links-list {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+	}
+	.events-links-list li {
+		background-color: var(--secondary-bg-color);
+		padding: 1rem 1.5rem;
+		border-radius: 0.5rem;
+		margin: 1rem;
+	}
+
 	.home-images {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
