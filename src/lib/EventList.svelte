@@ -40,7 +40,7 @@
 <h2 id="events">Events</h2>
 <p class="prose">
 	<span>Let us know if you're planning on coming to an event <a href="https://www.facebook.com/groups/115658245890790">facebook group</a>.</span>
-	<span>Subscribe to events on our <a href="https://calendar.google.com/calendar/u/1?cid=ZGlzY2dvbGZjYW1icmlkZ2VAZ21haWwuY29t">google calendar</a></span>
+	<span>Subscribe to events on our <a href="https://calendar.google.com/calendar/embed?src=467d2i4cnc7k8dpqmqla8r7r5k%40group.calendar.google.com&ctz=Europe%2FLondon">google calendar</a></span>
 </p>
 {#await eventsPromise}
 	<p>Loading...</p>

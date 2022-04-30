@@ -75,7 +75,7 @@
 			</div>
 			<p class="subtle links">
 				<a href="#events">Events</a><span class="separator">•</span><a
-					href="https://calendar.google.com/calendar/u/1?cid=ZGlzY2dvbGZjYW1icmlkZ2VAZ21haWwuY29t"
+					href="https://calendar.google.com/calendar/embed?src=467d2i4cnc7k8dpqmqla8r7r5k%40group.calendar.google.com&ctz=Europe%2FLondon"
 					>Google Calendar</a
 				>
 			</p>

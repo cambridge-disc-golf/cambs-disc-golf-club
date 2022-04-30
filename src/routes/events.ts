@@ -4,7 +4,7 @@ import type { Event } from "../lib/types";
 export async function get() {
 	// @ts-ignore
 	const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
-	const calendarId = "discgolfcambridge@gmail.com";
+	const calendarId = "467d2i4cnc7k8dpqmqla8r7r5k@group.calendar.google.com";
 
 	const now = new Date();
 	const sixMonthsFromNow = new Date(now.getFullYear(), now.getMonth() + 6, now.getDate());
@@ -26,7 +26,7 @@ export async function get() {
 
 		return {
 			body: events,
-		}
+		};
 	}
 
 	return {
