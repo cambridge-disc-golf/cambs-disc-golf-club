@@ -13,7 +13,7 @@
 						aria-current={currentPage === page ? 'page' : false}
 						href={`/${page !== 'home' ? page : ''}`}
 					>
-						{page.replaceAll('-', ' ')}</a
+						{page.replace(/-/g, ' ')}</a
 					>
 				</li>
 			{/each}
