@@ -27,9 +27,8 @@
         </dl>
         <dl>
             <dt>Papworth White</dt>
-            <dd>[M] Scott Rickard (-7)</dd>
-            <dd>[M] Matt van Scalkwyk (-7)</dd>
-            <dd>[F] TBC</dd>
+            <dd>[M] Scott Rickard; Matt van Scalkwyk (-7)</dd>
+            <dd>[F] Leia Turner (+8)</dd>
         </dl>
 	</section>
 	<section class="prose">
@@ -53,7 +52,7 @@
             </li>
             <li>
                 <span class="date">April 2022:</span>
-                <span>TBC</span>
+                <span>Leia Turner (-10)</span>
             </li>
         </ul>
 	</section>
