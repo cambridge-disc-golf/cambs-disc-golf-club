@@ -178,3 +178,7 @@ table tbody tr:nth-of-type(2n) {
 	white-space: nowrap;
 	border-width: 0;
 }
+
+.text-center {
+	text-align: center;
+}

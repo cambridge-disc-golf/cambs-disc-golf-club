@@ -37,15 +37,18 @@
 			challenge, with three longer open holes replacing some of the shorter,
 			wooded ones.
 		</p>
-		<picture>
-			<source src="/course.avif" type="image/avif" />
-			<source src="/course.webp" type="image/webp" />
-			<source src="/course.gif" type="image/gif" />
-			<img
-				src="/course.png"
-				alt="Map of the Papworth Disc Golf Course Layout"
-			/>
-		</picture>
+		<figure>
+			<picture>
+				<source src="/course.avif" type="image/avif" />
+				<source src="/course.webp" type="image/webp" />
+				<source src="/course.gif" type="image/gif" />
+				<img
+					src="/course.png"
+					alt="Map of the Papworth Disc Golf Course Layout"
+				/>
+			</picture>
+			<figcaption class="text-center">Map of the Starter Course layout</figcaption>
+		</figure>
 	</section>
 	<section class="prose">
 		<h2>The Sport</h2>
