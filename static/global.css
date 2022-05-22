@@ -182,3 +182,7 @@ table tbody tr:nth-of-type(2n) {
 .text-center {
 	text-align: center;
 }
+
+.flex {
+	display: flex;
+}
