@@ -20,16 +20,18 @@
 	</div>
 	<section class="prose">
 		<h2>Course Records</h2>
-        <dl>
-            <dt>Starter Course</dt>
-            <dd>[M] Scott Rickard (-10)</dd>
-            <dd>[F] Leia Turner (+3)</dd>
-        </dl>
-        <dl>
-            <dt>Papworth White</dt>
-            <dd>[M] Scott Rickard; Matt van Scalkwyk (-7)</dd>
-            <dd>[F] Leia Turner (+8)</dd>
-        </dl>
+        <div class="course-record-lists">
+            <dl>
+                <dt>Starter Course</dt>
+                <dd><code>[M]</code> Scott Rickard (-10)</dd>
+                <dd><code>[F]</code> Leia Turner (+3)</dd>
+            </dl>
+            <dl>
+                <dt>Papworth White</dt>
+                <dd><code>[M]</code> Scott Rickard; Matt van Scalkwyk (-7)</dd>
+                <dd><code>[F]</code> Leia Turner (+8)</dd>
+            </dl>
+        </div>
 	</section>
 	<section class="prose">
 		<h2>Handicap Tournaments</h2>
@@ -69,6 +71,7 @@
 <style>
     dt {
         font-weight: bold;
+        margin-block-end: 0.5rem;
     }
     dd {
         margin: 0;
@@ -86,4 +89,20 @@
     .handicap-winners li :first-child {
         text-align: right;
     }
+    main > section {
+        margin-block-start: 1rem;
+    }
+
+    .course-record-lists {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1rem;
+	}
+	.course-record-lists dl {
+		flex: 1 1 20rem;
+		background-color: var(--secondary-bg-color);
+		padding: 1rem 1.5rem 1rem 1rem;
+		border-radius: 0.5rem;
+	}
 </style>
