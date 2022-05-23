@@ -82,6 +82,7 @@
         grid-template-columns: auto 1fr;
         gap: 4px;
         padding: 0;
+        margin-block-end: 0;
     }
     .handicap-winners li {
         display: contents;
@@ -90,7 +91,7 @@
         text-align: right;
     }
     main > section {
-        margin-block-start: 1rem;
+        margin-block-start: 1.5rem;
     }
 
     .course-record-lists {
@@ -100,9 +101,13 @@
 		gap: 1rem;
 	}
 	.course-record-lists dl {
-		flex: 1 1 20rem;
+        flex: 1 1 20rem;
 		background-color: var(--secondary-bg-color);
 		padding: 1rem 1.5rem 1rem 1rem;
 		border-radius: 0.5rem;
+        margin: 0;
 	}
+    .course-record-lists {
+        margin-block-start: 1rem;
+    }
 </style>
