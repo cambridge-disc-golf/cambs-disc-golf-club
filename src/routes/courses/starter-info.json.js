@@ -1,16 +1,8 @@
 /**
- * @typedef {Object} HoleInfo
- * @property {number} hole
- * @property {number} distance
- * @property {number} par
- * @property {string} description
- */
-
-/**
- * @returns {HoleInfo[]} 
+ * @returns {import("../../lib/types").HoleInfo[]} 
  */
 export async function get() {
-    /** @type {HoleInfo[]} */
+    /** @type {import("../../lib/types").HoleInfo[]} */
 	const info = [{
         hole: 1,
         distance: 71,

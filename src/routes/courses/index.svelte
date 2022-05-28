@@ -29,15 +29,7 @@
 	import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';
 
-	/**
-	 * @typedef {Object} HoleInfo
-	 * @property {number} hole
-	 * @property {number} distance
-	 * @property {number} par
-	 * @property {string} description
-	 */
-
-	/** @type {HoleInfo[]} */
+	/** @type {import("../../lib/types").HoleInfo[]} */
 	export let data;
 </script>
 

@@ -9,3 +9,10 @@ export interface Event {
 	location: string;
 	isRecurring: boolean;
 }
+
+export interface HoleInfo {
+	hole: number;
+	distance: number;
+	par: number;
+	description: string;
+}
