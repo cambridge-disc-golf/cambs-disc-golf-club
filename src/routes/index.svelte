@@ -349,7 +349,7 @@
 
 	#first-visit .card-container {
 		display: flex;
-		column-gap: 1rem;
+		gap: 1rem;
 		flex-wrap: wrap;
 		margin-block-start: 1rem;
 	}
