@@ -29,7 +29,7 @@
             <dl>
                 <dt>Papworth White</dt>
                 <dd><code>[M]</code> Scott Rickard; Matt van Scalkwyk (-7)</dd>
-                <dd><code>[F]</code> Leia Turner (+8)</dd>
+                <dd><code>[F]</code> Leia Turner (+3)</dd>
             </dl>
         </div>
 	</section>
@@ -54,6 +54,10 @@
             </li>
             <li>
                 <span class="date">April 2022:</span>
+                <span>Leia Turner (-10)</span>
+            </li>
+            <li>
+                <span class="date">May 2022:</span>
                 <span>Leia Turner (-10)</span>
             </li>
         </ul>
