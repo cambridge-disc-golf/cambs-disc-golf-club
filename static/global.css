@@ -28,20 +28,34 @@
 :root {
 	--bg-color: #eee;
 	--secondary-bg-color: #ddd;
-	--accent-color: hsl(124, 100%, 65%);
-
+	
 	--dark-color: #222;
 	--light-color: #eee;
-
+	
 	--color: var(--dark-color);
+	--inv-color: var(--light-color);
+	
+	--green-color: hsl(125, 100%, 25%);
+	--red-color: hsl(0, 100%, 45%);
+	--heatmap-cell-highlight: hsl(55, 100%, 50%);
+	--heatmap-cell-h: 239;
+	--heatmap-cell-s: 94%;
+	--heatmap-cell-l: 19%;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg-color: #222;
 		--secondary-bg-color: #333;
-		--accent-color: hsl(124, 100%, 25%);
 		--color: var(--light-color);
+		--inv-color: var(--dark-color);
+		
+		--green-color: hsl(125, 100%, 40%);
+		--red-color: hsl(0, 100%, 65%);
+		--heatmap-cell-highlight: hsl(55, 100%, 60%);
+		--heatmap-cell-h: 190;
+		--heatmap-cell-s: 77%;
+		--heatmap-cell-l: 88%;	
 	}
 }
 
@@ -52,8 +66,10 @@ body {
 	margin: 0;
 }
 
-#bubbles {
-	fill: var(--secondary-bg-color);
+#svelte {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 p {
@@ -64,12 +80,13 @@ p {
 
 main {
 	padding: 1rem;
+	flex-grow: 1;
 }
 
 .container {
-	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr min(60rem, 100%) 1fr;
+	grid-auto-rows: min-content;
 }
 
 .container > * {
@@ -158,6 +175,10 @@ table tbody tr:nth-of-type(2n) {
 .flex-center-children {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+}
+
+.justify-center {
 	justify-content: center;
 }
 
