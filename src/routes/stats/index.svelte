@@ -175,6 +175,7 @@
                     ? (data.get("allDiffs").sort()[roundCount / 2 - 1] + data.get("allDiffs").sort()[roundCount / 2]) / 2
                     : data.get("allDiffs").sort()[(roundCount - 1) / 2]}
                 {@const personalBest = data.get("allDiffs").reduce((best, curr) => Math.min(best, curr))}
+                {@const theoreticalBest = Array.from(data.get("scoreFrequencies")).reduce((acc, [/* hole */, freqs]) => acc + [...freqs.keys()].sort()[0], 0) - Array.from(layoutPars.get(layout)).reduce((acc, [/* hole */, par]) => acc + par, 0)}
                 <section>
                     <h2>{layout}</h2>
                     <dl>
@@ -193,6 +194,10 @@
                         <div>
                             <dt>Median Round (+/-):</dt>
                             <dd>{medianDiff > 0 ? "+" : ""}{medianDiff || "E"}</dd>
+                        </div>
+                        <div>
+                            <dt>Theoretical Best Round (+/-):</dt>
+                            <dd>{theoreticalBest > 0 ? "+" : ""}{theoreticalBest || "E"}</dd>
                         </div>
                     </dl>
                     <table class="text-center">
