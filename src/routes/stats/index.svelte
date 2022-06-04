@@ -28,6 +28,7 @@
     let layoutPars;
     let hoveringFileInput = false;
 
+    $: console.log(selectedPlayer);
     $: selectedPlayerData = playerData?.get(selectedPlayer);
     $: layoutsForPerson = selectedPlayerData && Array.from(selectedPlayerData.keys());
 
@@ -68,6 +69,7 @@
         const people = new Set();
         const layouts = new Set();
         const dataPerPerson = new Map();
+        const playCounts = new Map();
         layoutPars = new Map();
         
         for (let [player, course, layout, /* date */, /* total */, diff, ...holeScores] of scorecardRows) {
@@ -120,11 +122,13 @@
             layoutData.set("scoreFrequencies", scoreFrequencies);
             layoutData.set("maxScore", maxScore);
             personData.set(layoutLabel, layoutData);
+            playCounts.set(player, (playCounts.get(player) || 0) + 1);
             dataPerPerson.set(player, personData);
         }
 
         possiblePlayers = Array.from(people).sort();
         playerData = dataPerPerson;
+        selectedPlayer = Array.from(playCounts).sort((a, b) => b[1] - a[1])[0][0];
 	}
 </script>
 
