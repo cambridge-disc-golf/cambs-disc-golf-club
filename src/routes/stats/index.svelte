@@ -26,13 +26,17 @@
     let selectedPlayer;    
     let playerData;
     let layoutPars;
+    let hoveringFileInput = false;
 
     $: selectedPlayerData = playerData?.get(selectedPlayer);
     $: layoutsForPerson = selectedPlayerData && Array.from(selectedPlayerData.keys());
 
-    async function handleFileChanged(event) {
-		const [file] = event.target.files;
-        
+    function onFileInputChanged(event) {
+        const [file] = event.target.files;
+        fileReceived(file);
+    }
+
+    async function fileReceived(file) {
         /** @type {string} */
         const text = await file.text();
         const [headerRow, ...scorecardRows] = text
@@ -141,7 +145,21 @@
             </select>
         </div>
     {:else}
-        <input type="file" id="scorecard-input" on:change={handleFileChanged} accept="*.csv" />
+        <label
+            for="scorecard-input"
+            on:dragenter|preventDefault={() => hoveringFileInput = true}
+            on:dragover|preventDefault={() => hoveringFileInput = true}
+            on:dragleave|preventDefault={() => hoveringFileInput = false}
+            on:drop|preventDefault={(e) => {
+                hoveringFileInput = false;
+                const [file] = e.dataTransfer.files;
+                fileReceived(file);
+            }}
+            class:hovering={hoveringFileInput}
+        ><p>{hoveringFileInput
+            ? "Drop the file here!"
+            : "Click & select or drag & drop your UDisc scorecard export here"}</p></label>
+        <input class="sr-only" type="file" id="scorecard-input" on:change={onFileInputChanged} accept=".csv" />
     {/if}
     {#if selectedPlayerData}
         <div
@@ -223,7 +241,27 @@
     main > *:not(:first-child) {
         margin-top: 1rem;
     }
-    
+
+    label[for="scorecard-input"] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--secondary-bg-color);
+        border: 2px dashed;
+        border-radius: 4px;
+    }
+    label[for="scorecard-input"]:hover,
+    label[for="scorecard-input"]:focus,
+    label[for="scorecard-input"].hovering {
+        cursor: pointer;
+        opacity: 0.75;
+        border-color: var(--blue-color);
+        border-style: solid;
+    }
+    label[for="scorecard-input"] p {
+        margin: 2rem;
+    }
+
     #person-picker {
         font-size: 1.5rem;
     }

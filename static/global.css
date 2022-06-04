@@ -41,6 +41,7 @@
 	--heatmap-cell-h: 239;
 	--heatmap-cell-s: 94%;
 	--heatmap-cell-l: 19%;
+	--blue-color: hsl(var(--heatmap-cell-h), var(--heatmap-cell-s), var(--heatmap-cell-l));
 }
 
 @media (prefers-color-scheme: dark) {
