@@ -19,6 +19,14 @@
     const OVERALL_DIFF_KEY = "+/-";
     const isHoleCell = (key) => key.match(/Hole\d+/);
 
+    const sumNums = (arr) => arr.reduce((acc, curr) => acc + curr, 0);
+    const minFromArr = (arr) => arr.sort()[0];
+    const medianNum = (arr) => arr.length % 2 === 0
+        ? (arr.sort()[arr.length / 2 - 1] + arr.sort()[arr.length / 2]) / 2
+        : arr.sort()[(arr.length - 1) / 2];
+    const formatRoundDiffInt = (diff) => `${diff > 0 ? "+" : ""}${diff || "E"}`;
+    const formatRoundDiffFloat = (diff) => `${diff > 0 ? "+" : ""}${diff.toFixed(2)}`;
+
     const SCORECARD_PAR_NAME = "Par";
     const PAPWORTH_NAME = "Papworth Everard";
 
@@ -28,7 +36,6 @@
     let layoutPars;
     let hoveringFileInput = false;
 
-    $: console.log(selectedPlayer);
     $: selectedPlayerData = playerData?.get(selectedPlayer);
     $: layoutsForPerson = selectedPlayerData && Array.from(selectedPlayerData.keys());
 
@@ -138,6 +145,7 @@
 	<div class="prose">
 		<h1>Stats</h1>
         <p>Export your scorecard data to a csv from the UDisc app and then use the file picker below to select it.</p>
+        <p class="subtle">To get your UDisc scorecard data, open the UDisc app, go to "More", then "Scorecards", click the icon in the top right, then "Export to CSV".</p>
 	</div>
     {#if possiblePlayers}
         <div>
@@ -174,13 +182,11 @@
             {#each layoutsForPerson as layout}
                 {@const data = selectedPlayerData.get(layout)}
                 {@const roundCount = data.get("allDiffs").length}
-                {@const averageDiff = (data.get("allDiffs").reduce((acc, curr) => acc + curr, 0) || 0) / roundCount}
-                {@const medianDiff = roundCount % 2 === 0
-                    ? (data.get("allDiffs").sort()[roundCount / 2 - 1] + data.get("allDiffs").sort()[roundCount / 2]) / 2
-                    : data.get("allDiffs").sort()[(roundCount - 1) / 2]}
-                {@const personalBest = data.get("allDiffs").reduce((best, curr) => Math.min(best, curr))}
+                {@const averageDiff = (sumNums(data.get("allDiffs")) || 0) / roundCount}
+                {@const medianDiff = medianNum(data.get("allDiffs"))}
+                {@const personalBest = minFromArr(data.get("allDiffs"))}
                 {@const theoreticalBest =
-                    Array.from(data.get("scoreFrequencies")).reduce((acc, [/* hole */, freqs]) => acc + [...freqs.keys()].sort()[0], 0)
+                    Array.from(data.get("scoreFrequencies")).reduce((acc, [/* hole */, freqs]) => acc + minFromArr(Array.from(freqs.keys())), 0)
                     - Array.from(data.get("scoreFrequencies")).reduce((acc, [hole]) => acc + layoutPars.get(layout).get(hole), 0)}
                 <section>
                     <h2>{layout}</h2>
@@ -191,19 +197,19 @@
                         </div>
                         <div>
                             <dt>PB (+/-):</dt>
-                            <dd>{personalBest > 0 ? "+" : ""}{personalBest || "E"}</dd>
+                            <dd>{formatRoundDiffInt(personalBest)}</dd>
                         </div>
                         <div>
                             <dt>Average Round (+/-):</dt>
-                            <dd>{averageDiff > 0 ? "+" : ""}{averageDiff.toFixed(2)}</dd>
+                            <dd>{formatRoundDiffFloat(averageDiff)}</dd>
                         </div>
                         <div>
                             <dt>Median Round (+/-):</dt>
-                            <dd>{medianDiff > 0 ? "+" : ""}{medianDiff || "E"}</dd>
+                            <dd>{formatRoundDiffInt(medianDiff)}</dd>
                         </div>
                         <div>
                             <dt>Theoretical Best Round (+/-):</dt>
-                            <dd>{theoreticalBest > 0 ? "+" : ""}{theoreticalBest || "E"}</dd>
+                            <dd>{formatRoundDiffInt(theoreticalBest)}</dd>
                         </div>
                     </dl>
                     <table class="text-center">
