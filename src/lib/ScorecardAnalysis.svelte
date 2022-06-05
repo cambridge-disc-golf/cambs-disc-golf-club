@@ -4,10 +4,10 @@
     export let coursePassList; // empty array to show all
 
     const sumNums = (arr) => arr.reduce((acc, curr) => acc + curr, 0);
-    const minFromArr = (arr) => arr.sort()[0];
+    const minFromArr = (arr) => arr.sort((a, b) => a - b)[0];
     const medianNum = (arr) => arr.length % 2 === 0
-        ? (arr.sort()[arr.length / 2 - 1] + arr.sort()[arr.length / 2]) / 2
-        : arr.sort()[(arr.length - 1) / 2];
+        ? (arr.sort((a, b) => a - b)[arr.length / 2 - 1] + arr.sort((a, b) => a - b)[arr.length / 2]) / 2
+        : arr.sort((a, b) => a - b)[(arr.length - 1) / 2];
     const formatRoundDiffInt = (diff) => `${diff > 0 ? "+" : ""}${diff || "E"}`;
     const formatRoundDiffFloat = (diff) => `${diff > 0 ? "+" : ""}${diff.toFixed(2)}`;
 
