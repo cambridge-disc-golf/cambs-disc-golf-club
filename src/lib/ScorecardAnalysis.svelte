@@ -143,7 +143,7 @@
             {@const theoreticalBest =
                 Array.from(data.get("scoreFrequencies")).reduce((acc, [/* hole */, freqs]) => acc + minFromArr(Array.from(freqs.keys())), 0)
                 - Array.from(data.get("scoreFrequencies")).reduce((acc, [hole]) => acc + layoutPars.get(layout).get(hole), 0)}
-            <section>
+            <section class="layout-container">
                 <h2>{layout}</h2>
                 <dl>
                     <div>
@@ -211,6 +211,13 @@
         display: flex;
         gap: 3rem;
         flex-wrap: wrap;
+    }
+    .layout-container {
+        overflow: auto;
+    }
+    .layout-container > :not(table) {
+        position: sticky;
+        left: 0;
     }
     dt, dd { 
         display: inline;
