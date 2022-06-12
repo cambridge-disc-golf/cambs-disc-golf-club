@@ -147,9 +147,7 @@
     {/if}
     {#if selectedPlayer}
         <div
-            class="layout-data-container"
             class:full-bleed={layoutsForPerson.size > 1}
-            class:justify-center={layoutsForPerson.size > 1}
         >
             <ScorecardAnalysis playerName={selectedPlayer} rowData={rowsGroupedByPerson?.get(selectedPlayer)} coursePassList={selectedCourses} />
         </div>
@@ -185,11 +183,5 @@
 
     #person-picker {
         font-size: 1.5rem;
-    }
-    
-    .layout-data-container {
-        display: flex;
-        gap: 3rem;
-        flex-wrap: wrap;
     }
 </style>
