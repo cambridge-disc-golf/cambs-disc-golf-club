@@ -11,6 +11,7 @@
     import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';
     import ScorecardAnalysis from '$lib/ScorecardAnalysis.svelte';
+    import { onMount } from 'svelte';
 
     const PERSON_KEY = "PlayerName";
     const COURSE_NAME_KEY = "CourseName";
@@ -22,6 +23,20 @@
 
     const SCORECARD_PAR_NAME = "Par";
     const PAPWORTH_NAME = "Papworth Everard";
+    let selectedCourses = [PAPWORTH_NAME];
+
+    onMount(() => {
+        const params = new URLSearchParams(location.search);
+        if (params.has("course")) {
+            const course = params.get("course");
+            if (["all", "*"].includes(course)) {
+                selectedCourses = [];
+            }
+            else {
+                selectedCourses = [course];
+            }
+        }
+    });
 
     let possiblePlayers;
     let selectedPlayer;
@@ -75,7 +90,7 @@
                 currentParRow = row;
             } else if (player.includes(" + ")) {
                 continue; // TODO: handle teams?
-            } else if (course !== PAPWORTH_NAME) {
+            } else if (selectedCourses.length && !selectedCourses.includes(course)) {
                 continue; // TODO: show all - Or have multiple select defaulting to papworth?
             } else if (rowsGroupedByPerson.has(player)) {
                 rowsGroupedByPerson.get(player).push(currentParRow, row);
@@ -136,7 +151,7 @@
             class:full-bleed={layoutsForPerson.size > 1}
             class:justify-center={layoutsForPerson.size > 1}
         >
-            <ScorecardAnalysis playerName={selectedPlayer} rowData={rowsGroupedByPerson?.get(selectedPlayer)} coursePassList={[PAPWORTH_NAME]} />
+            <ScorecardAnalysis playerName={selectedPlayer} rowData={rowsGroupedByPerson?.get(selectedPlayer)} coursePassList={selectedCourses} />
         </div>
     {/if}
 </main>
