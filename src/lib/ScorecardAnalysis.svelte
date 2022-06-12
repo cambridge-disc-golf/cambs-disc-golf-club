@@ -24,10 +24,18 @@
     };
     const ONE_YEAR_AGO = (() => {
         const d = new Date();
-        d.setFullYear(d.getFullYear() - 1);
-        return d;
+        return { year: d.getFullYear() - 1, month: d.getMonth() + 1, day: d.getDate() };
     })();
-    const eligibleForHandicapCalc = (course, layout, dateStr) => HANDICAP_ADJUST[course] !== undefined && HANDICAP_ADJUST[course][layout] !== undefined && new Date(dateStr) > ONE_YEAR_AGO;
+    const eligibleForHandicapCalc = (course, layout, dateStr) => {
+        if (HANDICAP_ADJUST[course] === undefined) return false;
+        else if (HANDICAP_ADJUST[course][layout] === undefined) return false;
+        const [/* full */, yearStr, monthStr, dayStr] = dateStr.match(/(\d{4})-(\d{2})-(\d{2})/);
+        if (Number(yearStr) > ONE_YEAR_AGO.year) return true;
+        else if (Number(yearStr) < ONE_YEAR_AGO.year) return false;
+        else if (Number(monthStr) > ONE_YEAR_AGO.month) return true;
+        else if (Number(monthStr) < ONE_YEAR_AGO.month) return false;
+        return Number(dayStr) >= ONE_YEAR_AGO.day;
+    };
     let handicapCalcRounds = [];
     const HANDICAP_BEST_OF = 10;
 
@@ -46,7 +54,6 @@
         handicap = null;
         handicapCalcRounds = [];
         
-        let holesForRound = 18;
         for (let [player, course, layout, dateStr, /* total */, diff, ...holeScores] of scorecardRows) {
             course = course.trim();
             layout = layout.trim();
@@ -116,6 +123,7 @@
 
         layoutsForPerson = Array.from(layoutPars.keys());
         handicap = handicapCalcRounds.length ? Math.round(sumNums(handicapCalcRounds) / handicapCalcRounds.length) : null;
+        console.log(handicap, handicapCalcRounds);
     }
 </script>
 
