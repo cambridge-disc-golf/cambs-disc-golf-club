@@ -10,6 +10,7 @@
 				<ul aria-labelledby="footer-pages-heading">
 					<li><a href="/">Home</a></li>
 					<li><a href="/about">About</a></li>
+					<li><a href="/join">Join</a></li>
 					<li><a href="/courses">Courses</a></li>
 					<li><a href="/hall-of-fame">Hall of Fame</a></li>
 					<li><a href="/stats">Stats</a></li>

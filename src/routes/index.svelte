@@ -49,9 +49,11 @@
 				<p>No experience necessary</p>
 			</div>
 			<p class="subtle links">
-				<a href="/about">About us</a><span class="separator">•</span><a
-					href="#first-visit">On your first visit</a
-				>
+				<a href="/about">About us</a>
+				<span class="separator">•</span>
+				<a href="/join">Join</a>
+				<span class="separator">•</span>
+				<a href="#first-visit">On your first visit</a>
 			</p>
 		</li>
 		<li>
@@ -171,11 +173,14 @@
 			>.
 		</p>
 	</section>
-	<div class="flex-center-children">
+	<div class="large-join-links flex-center-children">
+		<a class="join-club flex-center-children" href="/join">
+			<span>Join the Club</span>
+		</a>
 		<a class="join-fb-group flex-center-children" href="https://www.facebook.com/groups/115658245890790">
 			<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666c.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067Z" clip-rule="evenodd"
 				/></svg
-			><span>Join our Facebook Group</span>
+			><span>Facebook Group</span>
 		</a>
 	</div>
 	<section id="first-visit">
@@ -337,11 +342,20 @@
 		margin-block: 0.5ex;
 	}
 
-	.join-fb-group {
+	.large-join-links {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+	.large-join-links > a {
 		background-color: var(--secondary-bg-color);
-		padding: 1rem 1.5rem 1rem 1rem;
+		padding: 1rem;
 		border-radius: 0.5rem;
 		font-size: 1.5rem;
+	}
+	.join-fb-group {
+		padding-block-end: 1.5rem;
 	}
 	.join-fb-group > span {
 		margin-inline-start: 1ch;

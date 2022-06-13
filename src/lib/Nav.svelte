@@ -1,7 +1,7 @@
 <script>
-	/** @type {"home"|"about"|"courses"|"hall-of-fame"} */
+	/** @type {"home"|"about"|"join"|"courses"|"hall-of-fame"} */
 	export let currentPage;
-	const pages = ['home', 'about', 'courses', "hall-of-fame"];
+	const pages = ["home", "about", "join", "courses", "hall-of-fame"];
 </script>
 
 <nav>
@@ -10,10 +10,10 @@
 			{#each pages as page}
 				<li>
 					<a
-						aria-current={currentPage === page ? 'page' : false}
-						href={`/${page !== 'home' ? page : ''}`}
+						aria-current={currentPage === page ? "page" : false}
+						href={`/${page !== "home" ? page : ""}`}
 					>
-						{page.replace(/-/g, ' ')}</a
+						{page.replace(/-/g, " ")}</a
 					>
 				</li>
 			{/each}
@@ -39,7 +39,7 @@
 		margin-inline-end: 2ch;
 		text-transform: capitalize;
 	}
-	nav a[aria-current='page'] {
+	nav a[aria-current="page"] {
 		font-weight: bold;
 	}
 </style>
