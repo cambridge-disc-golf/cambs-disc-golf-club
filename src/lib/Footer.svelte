@@ -18,6 +18,20 @@
 				</ul>
 			</div>
 			<div>
+				<p class="heading" id="footer-club-docs-heading">Club Documents</p>
+				<ul aria-labelledby="footer-club-docs-heading">
+					<li>
+						<a href="/club-docs/Constitution.pdf">Constitution</a>
+					</li>
+					<li>
+						<a href="/club-docs/Safeguarding Policy.pdf">Safeguarding Policy</a>
+					</li>
+					<li>
+						<a href="/club-docs/Social Media Policy.pdf">Social Media Policy</a>
+					</li>
+				</ul>
+			</div>
+			<div>
 				<p class="heading" id="footer-links-heading">Links</p>
 				<ul aria-labelledby="footer-links-heading">
 					<li>
@@ -66,11 +80,9 @@
 		padding: 1rem;
 	}
 	.footer-links-container {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.footer-links-container > * {
-		margin-inline-end: 2rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+		gap: 1rem;
 	}
 	.footer-links-container ul {
 		padding-inline-start: 1.5ch;
