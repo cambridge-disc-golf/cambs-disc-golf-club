@@ -66,6 +66,7 @@
     }
     .tag-img {
         margin: 1rem auto;
+        width: 100%;
         max-width: 30rem;
     }
 </style>
