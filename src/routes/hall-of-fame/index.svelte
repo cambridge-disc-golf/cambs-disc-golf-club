@@ -60,6 +60,10 @@
                 <span class="date">May 2022:</span>
                 <span>Leia Turner (-10)</span>
             </li>
+            <li>
+                <span class="date">June 2022:</span>
+                <span>Jack Ryan (-9)</span>
+            </li>
         </ul>
 	</section>
 	<section class="prose">
