@@ -12,7 +12,9 @@
 
 <main class="container">
 	<h1>Join the club</h1>
-    <p>Sign up form will be live soon, check back here later!</p>
+    <div class="join-link-container">
+        <a href="https://forms.gle/BG7dJZLN6iDE4A6W8" target="_blank">Sign up form</a>
+    </div>
 	<section>
 		<h2>Details</h2>
         <p>Membership will run from 1st July to 30th June, and consist of the following categories:</p>
@@ -60,6 +62,15 @@
 <style>
     section {
 		margin-block-start: 2rem;
+	}
+	.join-link-container {
+        margin-block-start: 2rem;
+    }
+	.join-link-container > a {
+		background-color: var(--secondary-bg-color);
+		padding: 1rem 2rem;
+		border-radius: 0.5rem;
+		font-size: 1.5rem;
 	}
     .tag-img-container {
         display: flex;
