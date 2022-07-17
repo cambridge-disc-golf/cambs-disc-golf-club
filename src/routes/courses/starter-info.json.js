@@ -1,7 +1,7 @@
 /**
  * @returns {import("../../lib/types").HoleInfo[]} 
  */
-export async function get() {
+export async function GET() {
     /** @type {import("../../lib/types").HoleInfo[]} */
 	const info = [{
         hole: 1,

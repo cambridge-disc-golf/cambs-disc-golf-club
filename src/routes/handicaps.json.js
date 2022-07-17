@@ -1,5 +1,5 @@
 
-export async function get() {
+export async function GET() {
 	const res = await fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vRigBwYoZV5k4O6oJR8d3GHKPXqVRpnsREvSm7pwB5jUKOJ6lYNJxf_XoMFQU3K-k1MQdUXvAvZWVya/pub?gid=443736566&single=true&output=csv")
 	const csvStr = await res.text();
 

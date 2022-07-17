@@ -8,7 +8,7 @@ async function getPages() {
         .filter(page => page.length);
   }
 
-export async function get() {
+export async function GET() {
     const website = "https://www.cambridgediscgolf.uk";
     const pages = await getPages();
 

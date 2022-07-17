@@ -1,7 +1,7 @@
 import type { Event } from "../lib/types";
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
-export async function get() {
+export async function GET() {
 	// @ts-ignore
 	const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
 	const calendarId = "467d2i4cnc7k8dpqmqla8r7r5k@group.calendar.google.com";
