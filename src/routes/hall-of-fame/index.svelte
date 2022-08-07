@@ -64,6 +64,10 @@
                 <span class="date">June 2022:</span>
                 <span>Jack Ryan (-9)</span>
             </li>
+            <li>
+                <span class="date">July 2022:</span>
+                <span>Charlotte Gregg & Jack Ryan (-10)</span>
+            </li>
         </ul>
 	</section>
 	<section class="prose">
