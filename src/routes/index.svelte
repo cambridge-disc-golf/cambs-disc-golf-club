@@ -12,10 +12,10 @@
 
 <div class="home-hero-container">
 	<picture>
-		<source srcset="/leia-hero.webp" type="image/webp" />
+		<source srcset="/photos/leia-hero.webp" type="image/webp" />
 		<img
 			class="hero-img"
-			src="/leia-hero.jpg"
+			src="/photos/leia-hero.jpg"
 			alt="A disc golfer about to throw towards a basket with Papworth Hall in the background"
 		/>
 	</picture>
@@ -245,23 +245,23 @@
 	<div class="full-bleed home-images">
 		<img
 			loading="lazy"
-			src="/hole-8-willem.jpg"
+			src="/photos/hole-8-willem.jpg"
 			alt="Male disc golf player under a branch framing the shot"
 		/>
 		<img
 			loading="lazy"
 			class="jumper-round-img"
-			src="/christmas-round.jpg"
+			src="/photos/christmas-round.jpg"
 			alt="Club members looking happy after a christmas jumper round"
 		/>
 		<img
 			loading="lazy"
-			src="/hole-15-putts.jpg"
+			src="/photos/hole-15-putts.jpg"
 			alt="Two players putting towards an elevated basket"
 		/>
 		<img
 			loading="lazy"
-			src="/hole-8-leia.jpg"
+			src="/photos/hole-8-leia.jpg"
 			alt="Female disc golf player prparing to throw around a tree to the basket"
 		/>
 	</div>

@@ -52,7 +52,7 @@
     </section>
     <section>
         <div class="tag-img-container">
-            <img class="tag-img" src="/tags.png" alt="2022 bag tags with King's College design">
+            <img class="tag-img" src="/photos/tags.png" alt="2022 bag tags with King's College design">
         </div>
     </section>
 </main>
