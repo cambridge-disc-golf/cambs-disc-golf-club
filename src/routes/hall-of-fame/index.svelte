@@ -68,6 +68,10 @@
                 <span class="date">July 2022:</span>
                 <span>Charlotte Gregg & Jack Ryan (-10)</span>
             </li>
+            <li>
+                <span class="date">August 2022:</span>
+                <span>Simon West (+1)</span>
+            </li>
         </ul>
 	</section>
 	<section class="prose">
