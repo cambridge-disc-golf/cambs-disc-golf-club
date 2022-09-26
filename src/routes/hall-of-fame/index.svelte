@@ -72,6 +72,10 @@
                 <span class="date">August 2022:</span>
                 <span>Simon West (+1)</span>
             </li>
+            <li>
+                <span class="date">September 2022:</span>
+                <span>Henry Griffiths (-3)</span>
+            </li>
         </ul>
 	</section>
 	<section class="prose">
