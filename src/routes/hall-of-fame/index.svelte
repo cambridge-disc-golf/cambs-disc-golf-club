@@ -28,7 +28,7 @@
             </dl>
             <dl>
                 <dt>Papworth White</dt>
-                <dd><code>[M]</code> Matt van Scalkwyk (-9)</dd>
+                <dd><code>[M]</code> Matt van Scalkwyk (-12)</dd>
                 <dd><code>[F]</code> Leia Turner (+3)</dd>
             </dl>
         </div>
