@@ -76,12 +76,21 @@
                 <span class="date">September 2022:</span>
                 <span>Henry Griffiths (-3)</span>
             </li>
+            <li>
+                <span class="date">October 2022<br />(Glow short 9):</span>
+                <span>Charlotte (-14.5)</span>
+            </li>
+            <li>
+                <span class="date">November 2022:</span>
+                <span>B (-6)</span>
+            </li>
         </ul>
 	</section>
 	<section class="prose">
 		<h2>Aces</h2>
         <ol>
             <li>Steve Lokie - Hole 17 - 13th March 2022</li>
+            <li>Aleksander Gundersen - Hole 11 (White) - 19th November 2022</li>
         </ol>
 	</section>
 </main>
@@ -100,6 +109,7 @@
         list-style: none;
         display: grid;
         grid-template-columns: auto 1fr;
+        align-items: center;
         gap: 4px;
         padding: 0;
         margin-block-end: 0;
