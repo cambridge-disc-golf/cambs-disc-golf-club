@@ -31,6 +31,11 @@
                 <dd><code>[M]</code> Matt van Scalkwyk (-12)</dd>
                 <dd><code>[F]</code> Leia Turner (+3)</dd>
             </dl>
+            <dl>
+                <dt>Supreme 18</dt>
+                <dd><code>[M]</code> Matt van Scalkwyk (-2)</dd>
+                <!-- <dd><code>[F]</code> - (-)</dd> -->
+            </dl>
         </div>
 	</section>
 	<section class="prose">
@@ -83,6 +88,10 @@
             <li>
                 <span class="date">November 2022:</span>
                 <span>B (-6)</span>
+            </li>
+            <li>
+                <span class="date">December 2022:</span>
+                <span>Simon West (-3)</span>
             </li>
         </ul>
 	</section>

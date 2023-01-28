@@ -98,7 +98,7 @@
 			</li>
 			<li>
 				<div class="profile-pic">
-					<div>JP</div>
+					<img src="/committee/2022/Jamie_T.jpg" aria-hidden="true" alt="" />
 				</div>
 				<div class="content">
 					<p class="heading">Treasurer</p>
@@ -165,17 +165,6 @@
 		width: 100%;
 		aspect-ratio: 1;
 		border-radius: 1rem;
-		margin: 0 auto;
-	}
-	.members .profile-pic > div {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 2.5rem;
-		width: 100%;
-		aspect-ratio: 1;
-		border-radius: 1rem;
-		background-color: var(--secondary-bg-color);
 		margin: 0 auto;
 	}
 	.members > li .heading {
