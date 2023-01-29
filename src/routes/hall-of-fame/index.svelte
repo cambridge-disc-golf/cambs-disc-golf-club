@@ -93,6 +93,10 @@
                 <span class="date">December 2022:</span>
                 <span>Simon West (-3)</span>
             </li>
+            <li>
+                <span class="date">January 2023:</span>
+                <span>Joshua Ham (-7)</span>
+            </li>
         </ul>
 	</section>
 	<section class="prose">
