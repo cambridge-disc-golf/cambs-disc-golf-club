@@ -34,7 +34,7 @@
             <dl>
                 <dt>Supreme 18</dt>
                 <dd><code>[M]</code> Matt van Scalkwyk (-2)</dd>
-                <!-- <dd><code>[F]</code> - (-)</dd> -->
+                <dd><code>[F]</code> Leia Turner (+17)</dd>
             </dl>
         </div>
 	</section>
@@ -96,6 +96,10 @@
             <li>
                 <span class="date">January 2023:</span>
                 <span>Joshua Ham (-7)</span>
+            </li>
+            <li>
+                <span class="date">February 2023:</span>
+                <span>Leia Turner (-5)</span>
             </li>
         </ul>
 	</section>
