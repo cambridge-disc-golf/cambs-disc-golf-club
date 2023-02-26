@@ -64,8 +64,12 @@
 			</div>
 		</div>
 		<div class="footer-copyright">
-			<img class="logo" src="/CamDG.png" alt="Logo" />
-			<span>&copy; {year} Cambridge Disc Golf Club</span>
+			<div>
+				<img src="/CamDG.svg" width="200px" height="200px" alt="Logo" />
+			</div>
+			<div>
+				<span>&copy; {year} Cambridge Disc Golf Club</span>
+			</div>
 		</div>
 	</div>
 </footer>
@@ -92,18 +96,7 @@
 		margin-block: 1ex;
 	}
 	.footer-copyright {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.logo {
-		height: 2rem;
-		margin-inline: 1rem;
-	}
-	@media (prefers-color-scheme: dark) {
-		.logo {
-			filter: invert(1);
-		}
+		text-align: center;
 	}
 	@media (max-width: 570px) {
 		.footer-copyright {

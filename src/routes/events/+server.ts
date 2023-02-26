@@ -1,4 +1,6 @@
-import type { Event } from "../lib/types";
+import { error, json } from '@sveltejs/kit';
+
+import type { Event } from "../../lib/types";
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function GET() {
@@ -24,12 +26,8 @@ export async function GET() {
 			isRecurring: item.recurringEventId !== undefined,
 		}));
 
-		return {
-			body: events,
-		};
+		return json(events);
 	}
 
-	return {
-		status: 500,
-	};
+	return error(500);
 }

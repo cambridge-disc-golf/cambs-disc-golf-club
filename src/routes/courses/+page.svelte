@@ -5,26 +5,6 @@
 	<script src="/lite-youtube-embed/lite-yt-embed.mjs"></script>
 </svelte:head>
 
-<script context="module">
-	export async function load({ fetch }) {
-		const url = `/courses/starter-info.json`;
-		const res = await fetch(url);
-
-		if (res.ok) {
-			return {
-				props: {
-					data: await res.json(),
-				},
-			};
-		}
-
-		return {
-			status: res.status,
-			error: new Error(`Could not load ${url}`),
-		};
-	}
-</script>
-
 <script>
 	import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';
@@ -51,7 +31,7 @@
 		</picture>
 
 		<ul class="course-info-list prose">
-			{#each data as holeInfo}
+			{#each data.holeInfo as holeInfo}
 				<li>
 					<div class="hole-info-heading">
 						<h3>Hole {holeInfo.hole}</h3>

@@ -8,13 +8,13 @@
     "lint": "eslint --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-netlify": "^1.0.0-next.51",
-    "@sveltejs/kit": "^1.0.0-next.301",
-    "eslint": "^7.32.0",
-    "eslint-plugin-svelte3": "^3.4.1",
-    "svelte": "^3.46.4",
-    "svelte-preprocess": "^4.10.4",
-    "vite": "^3.0.0"
+    "@sveltejs/adapter-netlify": "^2.0.5",
+    "@sveltejs/kit": "^1.8.5",
+    "eslint": "^8.35.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "svelte": "^3.55.1",
+    "svelte-preprocess": "^5.0.1",
+    "vite": "^4.1.4"
   },
   "type": "module",
   "dependencies": {

@@ -13,7 +13,7 @@
 <main class="container">
 	<h1>Join the club</h1>
     <div class="join-link-container">
-        <a href="https://forms.gle/BG7dJZLN6iDE4A6W8" target="_blank">Sign up form</a>
+        <a href="https://forms.gle/BG7dJZLN6iDE4A6W8" target="_blank" rel="noreferrer">Sign up form</a>
     </div>
 	<section>
 		<h2>Details</h2>

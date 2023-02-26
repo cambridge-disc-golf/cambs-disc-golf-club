@@ -3,27 +3,6 @@
 	<meta name="description" content="Handicaps for the members of CamDG" />
 </svelte:head>
 
-<script context="module">
-	export const prerender = false;
-	export async function load({ fetch }) {
-		const url = `/handicaps.json`;
-		const res = await fetch(url);
-
-		if (res.ok) {
-			return {
-				props: {
-					data: await res.json()
-				}
-			};
-		}
-
-		return {
-			status: res.status,
-			error: new Error(`Could not load ${url}`)
-		};
-	}
-</script>
-
 <script>
 	export let data;
 </script>
@@ -40,7 +19,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each data as { rank, name, handicap } }
+			{#each data.handicaps as { rank, name, handicap } }
 				<tr>
 					<td>{rank}</td>
 					<td>{name}</td>

@@ -1,8 +1,10 @@
+import { json } from '@sveltejs/kit';
+
 /**
- * @returns {import("../../lib/types").HoleInfo[]} 
+ * @returns {import("../../../lib/types").HoleInfo[]} 
  */
 export async function GET() {
-    /** @type {import("../../lib/types").HoleInfo[]} */
+    /** @type {import("../../../lib/types").HoleInfo[]} */
 	const info = [{
         hole: 1,
         distance: 71,
@@ -95,5 +97,5 @@ export async function GET() {
         description: "The last but not least of the downhill stretch to finish.",
     }];
 
-    return { body: info };
+    return json(info);
 }

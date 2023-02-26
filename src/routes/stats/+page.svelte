@@ -3,10 +3,6 @@
 	<meta name="description" content="See an overview of your UDisc scorecard data for the Papworth courses" />
 </svelte:head>
 
-<script context="module">
-	export const prerender = false;
-</script>
-
 <script>
     import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';

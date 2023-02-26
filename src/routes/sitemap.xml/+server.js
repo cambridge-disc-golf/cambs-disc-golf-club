@@ -1,6 +1,6 @@
 async function getPages() {
-    const pages = await Object.entries(
-        import.meta.globEager('/src/routes/**/index.svelte')
+    const pages = Object.entries(
+        import.meta.glob("/src/routes/**/index.svelte", { eager: true })
     );
 
     return pages
@@ -12,11 +12,7 @@ export async function GET() {
     const website = "https://www.cambridgediscgolf.uk";
     const pages = await getPages();
 
-    return {
-        headers: {
-            'Content-Type': 'application/xml'
-        },
-        body: `
+    return new Response(`
         <?xml version="1.0" encoding="UTF-8" ?>
         <urlset
             xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
@@ -36,8 +32,13 @@ export async function GET() {
                 <loc>${website}/${page}</loc>
                 <changefreq>monthly</changefreq>
                 <priority>0.7</priority>
-            </url>`).join('\n')}
+            </url>`).join("\n")}
         </urlset>
-        `.trim()
-    };
+        `.trim(),
+        {
+            headers: {
+                "Content-Type": "application/xml"
+            }
+        }
+    );
 }

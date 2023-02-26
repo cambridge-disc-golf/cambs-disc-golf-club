@@ -9,9 +9,6 @@ const config = {
 
 	kit: {
 		adapter: netlify({ edge: true }),
-		prerender: {
-			default: true,
-		},
 	},
 };
 

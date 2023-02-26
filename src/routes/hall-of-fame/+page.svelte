@@ -3,10 +3,6 @@
 	<meta name="description" content="Course record holders, ace throwers, and tournament winners" />
 </svelte:head>
 
-<script context="module">
-	export const hydrate = false;
-</script>
-
 <script>
 	import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';

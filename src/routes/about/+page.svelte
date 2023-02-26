@@ -3,10 +3,6 @@
 	<meta name="description" content="Info about the club, the course, and the sport." />
 </svelte:head>
 
-<script context="module">
-	export const hydrate = false;
-</script>
-
 <script>
 	import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';
