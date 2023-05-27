@@ -104,6 +104,10 @@
 				<span class="date">March 2023:</span>
 				<span>Gabi Everett & Joshua Ham (-10)</span>
 			</li>
+			<li>
+				<span class="date">April 2023:</span>
+				<span>David Steed (-7)</span>
+			</li>
 		</ul>
 	</section>
 	<section class="prose">
