@@ -108,6 +108,10 @@
 				<span class="date">April 2023:</span>
 				<span>David Steed (-7)</span>
 			</li>
+			<li>
+				<span class="date">May 2023:</span>
+				<span>Doug (-5)</span>
+			</li>
 		</ul>
 	</section>
 	<section class="prose">
