@@ -112,6 +112,14 @@
 				<span class="date">May 2023:</span>
 				<span>Doug (-5)</span>
 			</li>
+			<li>
+				<span class="date">June 2023:</span>
+				<span>-</span>
+			</li>
+			<li>
+				<span class="date">July 2023:</span>
+				<span>Dan (-5)</span>
+			</li>
 		</ul>
 	</section>
 	<section class="prose">
