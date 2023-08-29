@@ -120,6 +120,10 @@
 				<span class="date">July 2023:</span>
 				<span>Dan (-5)</span>
 			</li>
+			<li>
+				<span class="date">August 2023:</span>
+				<span>Peter Weightman (-6)</span>
+			</li>
 		</ul>
 	</section>
 	<section class="prose">
