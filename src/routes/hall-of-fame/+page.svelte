@@ -124,6 +124,10 @@
 				<span class="date">August 2023:</span>
 				<span>Peter Weightman (-6)</span>
 			</li>
+			<li>
+				<span class="date">September 2023:</span>
+				<span>Joshua Ham (-4)</span>
+			</li>
 		</ul>
 	</section>
 	<section class="prose">
