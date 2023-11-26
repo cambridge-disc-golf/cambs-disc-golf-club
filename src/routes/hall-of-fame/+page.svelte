@@ -128,6 +128,14 @@
 				<span class="date">September 2023:</span>
 				<span>Joshua Ham (-4)</span>
 			</li>
+			<li>
+				<span class="date">October 2023:</span>
+				<span>Lee Riley (-6)</span>
+			</li>
+			<li>
+				<span class="date">November 2023:</span>
+				<span>Dan (-5)</span>
+			</li>
 		</ul>
 	</section>
 	<section class="prose">
