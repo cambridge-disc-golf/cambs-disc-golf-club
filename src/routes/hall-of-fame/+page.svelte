@@ -136,6 +136,10 @@
 				<span class="date">November 2023:</span>
 				<span>Dan (-5)</span>
 			</li>
+			<li>
+				<span class="date">December 2023:</span>
+				<span>Jessica Riley (-6)</span>
+			</li>
 		</ul>
 	</section>
 	<section class="prose">
