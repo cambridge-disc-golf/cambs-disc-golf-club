@@ -39,108 +39,121 @@
 	</section>
 	<section class="prose">
 		<h2>Handicap Tournaments</h2>
-		<ul class="handicap-winners">
-			<li>
-				<span class="date">December 2021:</span>
-				<span>James Good (-6)</span>
-			</li>
-			<li>
-				<span class="date">January 2022:</span>
-				<span>Gabi Everett (-13)</span>
-			</li>
-			<li>
-				<span class="date">February 2022:</span>
-				<span>Joshua Ham (-10)</span>
-			</li>
-			<li>
-				<span class="date">March 2022:</span>
-				<span>B (-11)</span>
-			</li>
-			<li>
-				<span class="date">April 2022:</span>
-				<span>Leia Turner (-10)</span>
-			</li>
-			<li>
-				<span class="date">May 2022:</span>
-				<span>Leia Turner (-10)</span>
-			</li>
-			<li>
-				<span class="date">June 2022:</span>
-				<span>Jack Ryan (-9)</span>
-			</li>
-			<li>
-				<span class="date">July 2022:</span>
-				<span>Charlotte Gregg & Jack Ryan (-10)</span>
-			</li>
-			<li>
-				<span class="date">August 2022:</span>
-				<span>Simon West (+1)</span>
-			</li>
-			<li>
-				<span class="date">September 2022:</span>
-				<span>Henry Griffiths (-3)</span>
-			</li>
-			<li>
-				<span class="date">October 2022<br />(Glow short 9):</span>
-				<span>Charlotte (-14.5)</span>
-			</li>
-			<li>
-				<span class="date">November 2022:</span>
-				<span>B (-6)</span>
-			</li>
-			<li>
-				<span class="date">December 2022:</span>
-				<span>Simon West (-3)</span>
-			</li>
-			<li>
-				<span class="date">January 2023:</span>
-				<span>Joshua Ham (-7)</span>
-			</li>
-			<li>
-				<span class="date">February 2023:</span>
-				<span>Leia Turner (-5)</span>
-			</li>
-			<li>
-				<span class="date">March 2023:</span>
-				<span>Gabi Everett & Joshua Ham (-10)</span>
-			</li>
-			<li>
-				<span class="date">April 2023:</span>
-				<span>David Steed (-7)</span>
-			</li>
-			<li>
-				<span class="date">May 2023:</span>
-				<span>Doug (-5)</span>
-			</li>
-			<li>
-				<span class="date">June 2023:</span>
-				<span>-</span>
-			</li>
-			<li>
-				<span class="date">July 2023:</span>
-				<span>Dan (-5)</span>
-			</li>
-			<li>
-				<span class="date">August 2023:</span>
-				<span>Peter Weightman (-6)</span>
-			</li>
-			<li>
-				<span class="date">September 2023:</span>
-				<span>Joshua Ham (-4)</span>
-			</li>
-			<li>
-				<span class="date">October 2023:</span>
-				<span>Lee Riley (-6)</span>
-			</li>
-			<li>
-				<span class="date">November 2023:</span>
-				<span>Dan (-5)</span>
-			</li>
-			<li>
-				<span class="date">December 2023:</span>
-				<span>Jessica Riley (-6)</span>
-			</li>
-		</ul>
+		<details open>
+			<summary>2023</summary>
+			<ul class="handicap-winners">
+				<li>
+					<span class="date">January 2023:</span>
+					<span>Joshua Ham (-7)</span>
+				</li>
+				<li>
+					<span class="date">February 2023:</span>
+					<span>Leia Turner (-5)</span>
+				</li>
+				<li>
+					<span class="date">March 2023:</span>
+					<span>Gabi Everett & Joshua Ham (-10)</span>
+				</li>
+				<li>
+					<span class="date">April 2023:</span>
+					<span>David Steed (-7)</span>
+				</li>
+				<li>
+					<span class="date">May 2023:</span>
+					<span>Doug (-5)</span>
+				</li>
+				<li>
+					<span class="date">June 2023:</span>
+					<span>-</span>
+				</li>
+				<li>
+					<span class="date">July 2023:</span>
+					<span>Dan (-5)</span>
+				</li>
+				<li>
+					<span class="date">August 2023:</span>
+					<span>Peter Weightman (-6)</span>
+				</li>
+				<li>
+					<span class="date">September 2023:</span>
+					<span>Joshua Ham (-4)</span>
+				</li>
+				<li>
+					<span class="date">October 2023:</span>
+					<span>Lee Riley (-6)</span>
+				</li>
+				<li>
+					<span class="date">November 2023:</span>
+					<span>Dan (-5)</span>
+				</li>
+				<li>
+					<span class="date">December 2023:</span>
+					<span>Jessica Riley (-6)</span>
+				</li>
+			</ul>
+		</details>
+		<details>
+			<summary>2022</summary>
+			<ul class="handicap-winners">
+				<li>
+					<span class="date">January 2022:</span>
+					<span>Gabi Everett (-13)</span>
+				</li>
+				<li>
+					<span class="date">February 2022:</span>
+					<span>Joshua Ham (-10)</span>
+				</li>
+				<li>
+					<span class="date">March 2022:</span>
+					<span>B (-11)</span>
+				</li>
+				<li>
+					<span class="date">April 2022:</span>
+					<span>Leia Turner (-10)</span>
+				</li>
+				<li>
+					<span class="date">May 2022:</span>
+					<span>Leia Turner (-10)</span>
+				</li>
+				<li>
+					<span class="date">June 2022:</span>
+					<span>Jack Ryan (-9)</span>
+				</li>
+				<li>
+					<span class="date">July 2022:</span>
+					<span>Charlotte Gregg & Jack Ryan (-10)</span>
+				</li>
+				<li>
+					<span class="date">August 2022:</span>
+					<span>Simon West (+1)</span>
+				</li>
+				<li>
+					<span class="date">September 2022:</span>
+					<span>Henry Griffiths (-3)</span>
+				</li>
+				<li>
+					<span class="date">October 2022<br />(Glow short 9):</span>
+					<span>Charlotte (-14.5)</span>
+				</li>
+				<li>
+					<span class="date">November 2022:</span>
+					<span>B (-6)</span>
+				</li>
+				<li>
+					<span class="date">December 2022:</span>
+					<span>Simon West (-3)</span>
+				</li>
+			</ul>
+		</details>
+		<details>
+			<summary>2021</summary>
+			<ul class="handicap-winners">
+				<li>
+					<span class="date">December 2021:</span>
+					<span>James Good (-6)</span>
+				</li>
+			</ul>
+		</details>
 	</section>
 	<section class="prose">
 		<h2>Aces</h2>
@@ -160,6 +173,9 @@
 	}
 	dd {
 		margin: 0;
+	}
+	details {
+		margin-block-start: 1.5rem;
 	}
 	.handicap-winners {
 		list-style: none;
