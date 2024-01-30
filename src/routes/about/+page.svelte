@@ -1,12 +1,12 @@
+<script>
+	import Nav from "$lib/Nav.svelte";
+	import Footer from "$lib/Footer.svelte";
+</script>
+
 <svelte:head>
 	<title>About | CamDG</title>
 	<meta name="description" content="Info about the club, the course, and the sport." />
 </svelte:head>
-
-<script>
-	import Nav from '$lib/Nav.svelte';
-	import Footer from '$lib/Footer.svelte';
-</script>
 
 <Nav currentPage="about" />
 
@@ -17,31 +17,26 @@
 	<section class="prose">
 		<h2>The Club</h2>
 		<p>
-			Cambridge Disc Golf Club was founded in 2021 with the objectives of
-			promoting health, wellness, happiness and community development through
-			the learning and enjoyment of disc golf to the Cambridgeshire area. This
-			will be achieved by means of training sessions, tournaments, leagues,
-			social events and more.
+			Cambridge Disc Golf Club was founded in 2021 with the objectives of promoting health,
+			wellness, happiness and community development through the learning and enjoyment of disc
+			golf to the Cambridgeshire area. This will be achieved by means of training sessions,
+			tournaments, leagues, social events and more.
 		</p>
 	</section>
 	<section class="prose">
 		<h2>The Course</h2>
 		<p>
-			We have two courses at the moment, the "Starter Course", and "Papworth
-			White". The Starter Course is a great place to start your journey, and is
-			the most popular course. The Papworth White course is a bit more of a
-			challenge, with three longer open holes replacing some of the shorter,
-			wooded ones.
+			We have two courses at the moment, the "Starter Course", and "Papworth White". The
+			Starter Course is a great place to start your journey, and is the most popular course.
+			The Papworth White course is a bit more of a challenge, with three longer open holes
+			replacing some of the shorter, wooded ones.
 		</p>
 		<figure>
 			<picture>
 				<source src="/course.avif" type="image/avif" />
 				<source src="/course.webp" type="image/webp" />
 				<source src="/course.gif" type="image/gif" />
-				<img
-					src="/course.png"
-					alt="Map of the Papworth Disc Golf Course Layout"
-				/>
+				<img src="/course.png" alt="Map of the Papworth Disc Golf Course Layout" />
 			</picture>
 			<figcaption class="text-center">Map of the Starter Course layout</figcaption>
 		</figure>
@@ -49,30 +44,28 @@
 	<section class="prose">
 		<h2>The Sport</h2>
 		<p>
-			As you might expect, disc golf has similar rules and objectives to golf.
-			Instead of hitting a ball with a club, you throw a disc. Instead of
-			putting the ball into a hole, you throw the disc into a "basket". The aim
-			is to get the disc in the basket in as few throws ("strokes") as possible.
-			Each throw must be taken from where the previous one landed, but you are
-			allowed to change discs each throw.
+			As you might expect, disc golf has similar rules and objectives to golf. Instead of
+			hitting a ball with a club, you throw a disc. Instead of putting the ball into a hole,
+			you throw the disc into a "basket". The aim is to get the disc in the basket in as few
+			throws ("strokes") as possible. Each throw must be taken from where the previous one
+			landed, but you are allowed to change discs each throw.
 		</p>
 		<p>
-			Some holes have out-of-bounds (OB) areas, where you receive a penalty
-			stroke if you land in it. Your next throw is from where it last went out
-			of bounds. At Papworth, the first hole has a "mandatory" ("mando"), where
-			you have to throw between two trees. If you miss this, you recieve a
-			penalty stroke, and have to take your next shot at a "drop zone" between
-			the two trees.
+			Some holes have out-of-bounds (OB) areas, where you receive a penalty stroke if you land
+			in it. Your next throw is from where it last went out of bounds. At Papworth, the first
+			hole has a "mandatory" ("mando"), where you have to throw between two trees. If you miss
+			this, you recieve a penalty stroke, and have to take your next shot at a "drop zone"
+			between the two trees.
 		</p>
 		<p>
-			Disc golf discs come in different types, shapes, weights and colours. The
-			main types are putters, mid-range, fairways and drivers. Beginners are
-			normally advised to play with lighter, lower-speed discs. We can lend you
-			some discs to try and and see which you like best!
+			Disc golf discs come in different types, shapes, weights and colours. The main types are
+			putters, mid-range, fairways and drivers. Beginners are normally advised to play with
+			lighter, lower-speed discs. We can lend you some discs to try and and see which you like
+			best!
 		</p>
 	</section>
 	<section class="prose committee">
-		<h2>The 2022 Club Committee</h2>
+		<h2>The 2023 Club Committee</h2>
 		<ul class="reset members">
 			<li>
 				<div class="profile-pic">
