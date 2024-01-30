@@ -20,7 +20,7 @@
 	<section>
 		<h2>Details</h2>
 		<p>
-			Membership will run from 1st January to 30th January, and consist of the following
+			Membership will run from 1st January to 31st December, and consist of the following
 			categories:
 		</p>
 		<ul>
