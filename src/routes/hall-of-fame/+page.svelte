@@ -160,6 +160,7 @@
 		<ol>
 			<li>Steve Lokie - Hole 17 - 13th March 2022</li>
 			<li>Aleksander Gundersen - Hole 11 (White) - 19th November 2022</li>
+			<li>Jamie Pirie - Hole 2 - 4th February 2024</li>
 		</ol>
 	</section>
 </main>
