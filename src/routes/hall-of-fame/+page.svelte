@@ -40,6 +40,19 @@
 	<section class="prose">
 		<h2>Handicap Tournaments</h2>
 		<details open>
+			<summary>2024</summary>
+			<ul class="handicap-winners">
+				<li>
+					<span class="date">January 2024:</span>
+					<span>Jessica Riley (-6)</span>
+				</li>
+				<li>
+					<span class="date">February 2024:</span>
+					<span>Mike Grimwade (5pts Stableford)</span>
+				</li>
+			</ul>
+		</details>
+		<details>
 			<summary>2023</summary>
 			<ul class="handicap-winners">
 				<li>
@@ -161,6 +174,7 @@
 			<li>Steve Lokie - Hole 17 - 13th March 2022</li>
 			<li>Aleksander Gundersen - Hole 11 (White) - 19th November 2022</li>
 			<li>Jamie Pirie - Hole 2 - 4th February 2024</li>
+			<li>Scott Rickard - Hole 3 - 10th March 2024</li>
 		</ol>
 	</section>
 </main>
