@@ -27,12 +27,12 @@
 			</dl>
 			<dl>
 				<dt>Papworth White</dt>
-				<dd><code>[M]</code> Matt van Scalkwyk (-12)</dd>
+				<dd><code>[M]</code> Matthew Van Schalkwyk (-12)</dd>
 				<dd><code>[F]</code> Leia Turner (+3)</dd>
 			</dl>
 			<dl>
 				<dt>Supreme 18</dt>
-				<dd><code>[M]</code> Matt van Scalkwyk (-2)</dd>
+				<dd><code>[M]</code> Matt Van Schalkwyk (-2)</dd>
 				<dd><code>[F]</code> Leia Turner (+17)</dd>
 			</dl>
 		</div>
@@ -49,6 +49,18 @@
 				<li>
 					<span class="date">February 2024:</span>
 					<span>Mike Grimwade (5pts Stableford)</span>
+				</li>
+				<li>
+					<span class="date">March 2024:</span>
+					<span>Jessica Riley (-10)</span>
+				</li>
+				<li>
+					<span class="date">April 2024:</span>
+					<span>Henry Griffiths (-1)</span>
+				</li>
+				<li>
+					<span class="date">May 2024:</span>
+					<span>Matthew Van Schalkwyk (-4)</span>
 				</li>
 			</ul>
 		</details>
