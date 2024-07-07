@@ -62,6 +62,10 @@
 					<span class="date">May 2024:</span>
 					<span>Matthew Van Schalkwyk (-4)</span>
 				</li>
+				<li>
+					<span class="date">June 2024:</span>
+					<span>Doug (-6)</span>
+				</li>
 			</ul>
 		</details>
 		<details>
