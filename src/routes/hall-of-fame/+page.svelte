@@ -66,6 +66,18 @@
 					<span class="date">June 2024:</span>
 					<span>Doug (-6)</span>
 				</li>
+				<li>
+					<span class="date">July 2024:</span>
+					<span>-</span>
+				</li>
+				<li>
+					<span class="date">August 2024:</span>
+					<span>-</span>
+				</li>
+				<li>
+					<span class="date">September 2024:</span>
+					<span>Nenad Radojevic (-4)</span>
+				</li>
 			</ul>
 		</details>
 		<details>
